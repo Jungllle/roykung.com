@@ -1,2 +1,57 @@
-name: Your New Jekyll Site
+name: About GaryLai.CH
+url: http://about.garylai.ch
+description: LAI CHE HSU You can call me Gary. I'm a Rails developer living in Taiwan.
 pygments: true
+
+blogs:
+  - name: Blog
+    description: "It's all about"
+    url: http://blog.garylai.ch
+    external: true
+  - name: Life
+    description: "It's all about"
+    url: http://blog.garylai.ch
+    external: true
+
+projects:
+  - name:
+    description:
+    url:
+    external:
+    published_at:
+  - name:
+    description:
+    url:
+    external:
+    published_at:
+
+experiences:
+  - company_name:
+    description:
+    company_url:
+    external:
+    title:
+    location:
+    duration:
+  - company_name:
+    description:
+    company_url:
+    external:
+    title:
+    location:
+    duration:
+
+educations:
+  - school_name:
+    description:
+    school_url:
+    external:
+    description:
+    degree:
+    field:
+    duration:
+
+social_networks:
+  - name:
+    url:
+    external:
