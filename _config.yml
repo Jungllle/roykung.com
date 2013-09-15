@@ -102,8 +102,8 @@ blogs:
     url: http://life.garylai.ch
     external: true
   - name: Blog
-    description: "Programming note."
-    url: http://blog.garylai.ch
+    description: "Learning note."
+    url: http://note.garylai.ch
     external: true
 
 exclude: [".rvmrc", ".rbenv-version", ".gitignore", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "Procfile", "vendor"]
