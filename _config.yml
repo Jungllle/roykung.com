@@ -1,57 +1,107 @@
 name: About GaryLai.CH
 url: http://about.garylai.ch
-description: LAI CHE HSU You can call me Gary. I'm a Rails developer living in Taiwan.
+description: "賴哲勗 (Lai Che Hsu). Love traveling, problem solving B)"
 pygments: true
 
-blogs:
-  - name: Blog
-    description: "It's all about"
-    url: http://blog.garylai.ch
-    external: true
-  - name: Life
-    description: "It's all about"
-    url: http://blog.garylai.ch
+profiles:
+  - name: "GaryLai.CH"
+    url: http://about.garylai.ch
     external: true
 
 projects:
-  - name:
-    description:
-    url:
-    external:
-    published_at:
-  - name:
-    description:
-    url:
-    external:
-    published_at:
+  - name: Red Box
+    description: "2013 summer, when I'm at womany. I'm the leader of this projects. In this projects, we not only sell the red-box, which contain things women needed when they having periods, but also develop a mobile app which can help women to record thier periods. The goal is to organize all resources of womany and provide better services to users."
+    url: http://red.womany.net/
+    external: true
+    published_at: '2013-09'
+  - name: NCKU graduation
+    description: "When My mom come to my graduation ceremony, I want her can know information on her mobile. Thus, this website is for my mom and for all the parents of students. :))"
+    url: http://ncku-graduation.tw/
+    external: true
+    published_at: '2013-05'
+  - name: Goody Bakery
+    description: "This webist is about a love story. :p My friends want to surprise his girlfriend on her birthday. Thus, he tried to made a cake to give her. However, since then he did more and more dessert and dreamed to have his own Bakery, so I help hime to make his dream come true. Use an online shop to build this dream step by step. (Goody Bakery version 2.0 is comming soon.)"
+    url: http://goody-bakery.com
+    external: true
+    published_at: '2012-11'
+  - name: NCKU Course
+    description: "Students can find thier classmate more easily via this site. I build this site because once I enrolled in a course and we needed to find partners and prepare a group project with each other. However, their are 300 students. It's hard to find partners in real life but can easily find classmate here. (Deprecated)"
+    url: http://nckucourse.com
+    external: true
+    published_at: '2012-09'
+  - name: Dreamers Day
+    description: "My high school friend Roy is the organizer of dreamersday. Dreamersday is a students commnunity. Most of the members are trying to run a startup."
+    url: http://dreamersday.tw/
+    external: true
+    published_at: '2012-11'
 
 experiences:
-  - company_name:
-    description:
-    company_url:
-    external:
-    title:
-    location:
-    duration:
-  - company_name:
-    description:
-    company_url:
-    external:
-    title:
-    location:
-    duration:
+  - company_name: Womany
+    company_url: http://womany.net/
+    external: true
+    title: Front-end developer
+    location: "Taipei, Taiwan"
+    duration: "2013-07 ~ present"
+  - company_name: Cardinal Blue
+    company_url: http://cardinalblue.com/
+    external: true
+    title: User experience intern
+    location: "Taipei, Taiwan"
+    duration: "2012-07 ~ 2012-09"
+  - company_name: Asus
+    company_url: http://www.asus.com/tw/
+    external: true
+    title: Campus Officer
+    location: "Taipei, Taiwan"
+    duration: "2011-06 ~ 2012-06"
 
 educations:
-  - school_name:
-    description:
-    school_url:
-    external:
-    description:
-    degree:
-    field:
-    duration:
+  - school_name: National Cheng Kung University
+    school_url: http://english.web.ncku.edu.tw/bin/home.php
+    external: true
+    degree: BS
+    field: Industrial and information management
+    duration: "2009-06 ~ present"
 
 social_networks:
-  - name:
-    url:
-    external:
+  - name: Facebook
+    url: https://www.facebook.com/GaryLai.CH
+    icon: icon-facebook
+    external: true
+  - name: Twitter
+    url: https://twitter.com/garylai1990
+    icon: icon-twitter
+    external: true
+  - name: Github
+    url: https://github.com/garylai1990
+    icon: icon-github
+    external: true
+  - name: Google+
+    url: https://plus.google.com/u/0/112471435816092793964/
+    icon: icon-google-plus
+    external: true
+  - name: LinkedIn
+    url: http://www.linkedin.com/in/garylai1990
+    icon: icon-linkedin
+    external: true
+
+slides:
+  - name: Simple Rails Notification System
+    url: https://speakerdeck.com/garylai1990/rails-notification
+    external: true
+
+skills:
+  - name: Ruby
+    duration: "2011 ~ present"
+  - name: Java
+    duration: "2012-06 ~ 2013-06"
+
+blogs:
+  - name: Life
+    description: "Life, Thinking, Pets"
+    url: http://life.garylai.ch
+    external: true
+  - name: Blog
+    description: "Programming note."
+    url: http://blog.garylai.ch
+    external: true
