@@ -1,10 +1,84 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: About | GaryLai.ch
 ---
+<div class="title">Profile:</div>
 
-<div id="home">
-  {% for blog in site.blogs %}
-    {{ blog.name }}
+<div class="content">
+  <ul>
+    {% for profile in site.profiles %}
+      <li><a href="{{ profile.url }}">{{ profile.name }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="social-network">
+  {% for sn in site.social_networks %}
+    <a target="_blank" href="{{ sn.url }}"><i class="{{ sn.icon }} icon-large"></i></a>
   {% endfor %}
+</div>
+
+<div class="title">Projects:</div>
+
+<div class="content">
+  <ul>
+    {% for project in site.projects %}
+      <li><a target="_blank" href="{{ project.url}}">{{ project.name }}</a> ( {{ project.published_at }} )</li>
+      {{ project.description }}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="title">Experiences: </div>
+
+<div class="content">
+  <ul>
+    {% for experience in site.experiences %}
+      <li><a target="_blank" href="{{ experience.company_url}}">{{ experience.company_name }}</a> ( {{ experience.duration }} )</li>
+      {{ experience.title }}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="title">Education: </div>
+
+<div class="content">
+  <ul>
+    {% for education in site.educations %}
+      <li><a target="_blank" href="{{ education.school_url}}">{{ education.school_name }}</a> ( {{ education.duration }} )</li>
+      <div class="content-list">Degree: {{ education.degree }}</div>
+      <div class="content-list">Major: {{ education.field }}</div>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="title">Skills: </div>
+
+<div class="content">
+  <ul>
+    {% for skill in site.skills %}
+      <li><a target="_blank" href="{{ education.school_url}}">{{ skill.name }}</a> ( {{ skill.duration }} )</li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="title">Blogs:</div>
+
+<div class="content">
+  <ul>
+    {% for blog in site.blogs %}
+      <li><a target="_blank" href="{{ blog.url}}"> {{ blog.name }} </a></li>
+      {{ blog.description }}
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="title">Slides: </div>
+
+<div class="content">
+  <ul>
+    {% for slide in site.slides %}
+      <li><a target="_blank" href="{{ slide.url}}">{{ slide.name }}</a></li>
+    {% endfor %}
+  </ul>
 </div>
