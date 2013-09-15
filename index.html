@@ -29,6 +29,17 @@ title: About | GaryLai.ch
   </ul>
 </div>
 
+<div class="title">Organization: </div>
+
+<div class="content">
+  <ul>
+    {% for organization in site.organizations %}
+      <li><a target="_blank" href="{{ organization.url}}">{{ organization.name }}</a></li>
+      {{ organization.description }}
+    {% endfor %}
+  </ul>
+</div>
+
 <div class="title">Experiences: </div>
 
 <div class="content">

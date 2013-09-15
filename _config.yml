@@ -35,6 +35,11 @@ projects:
     external: true
     published_at: '2012-11'
 
+organizations:
+  - name: SITW (students in Taiwan)
+    url: http://github.com/sitw
+    description: "My friends and I are organizers. We wanna promote the sprits of open source to all students, so we publish lots of things on github in order to attract others."
+
 experiences:
   - company_name: Womany
     company_url: http://womany.net/
