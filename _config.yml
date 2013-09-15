@@ -105,3 +105,5 @@ blogs:
     description: "Programming note."
     url: http://blog.garylai.ch
     external: true
+
+exclude: [".rvmrc", ".rbenv-version", ".gitignore", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "Procfile", "vendor"]
