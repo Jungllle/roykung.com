@@ -55,4 +55,5 @@ DEPENDENCIES
   foreman
   jekyll
   rack-jekyll
+  redcarpet
   thin
