@@ -1,10 +1,12 @@
 ## 在自己的電腦跑起來
 
-(電腦請先安裝ruby)
+> 電腦請先安裝ruby
 
-1. `$ gem install jekyll`
-2. `$ bundle install`
-3. `$ jekyll serve --watch`
+```
+$ gem install jekyll
+$ bundle install
+$ jekyll serve --watch
+```
 
 打開瀏覽器到 [http://localhost:4000](http://localhost:4000)
 
@@ -36,12 +38,12 @@ $ rake preview
 
 打開瀏覽器到 [http://localhost:4000](http://localhost:4000)
 
----
 ## 發佈
 
-1. `$ ./deploy `
+```
+$ ./deploy
+```
 
----
 ## Authors
 
 - @garylai1990
