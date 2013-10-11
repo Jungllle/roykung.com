@@ -1,39 +1,29 @@
-name: About GaryLai.CH
-url: http://about.garylai.ch
-description: "賴哲勗 (Lai Che Hsu). Love traveling, problem solving B)"
+name: About RoyLinKung
+url: http://about.roykung.com
+description: "林昆彥 (RoyLinKung). I'm a dreamer, singer and Basketball player, loving jogging, reading and cooking, now running a startup in Taipei, Taiwan."
 pygments: true
 
 profiles:
-  - name: "GaryLai.CH"
-    url: http://about.garylai.ch
+  - name: "RoyLinKung"
+    url: http://about.roykung.com
     external: true
 
 projects:
-  - name: Goody Bakery
-    description: "This website is about a love story. :p My friends want to surprise his girlfriend on her birthday. Thus, he tried to made a cake to give her. However, since then he did more and more dessert and dreamed to have his own Bakery, so I help hime to make his dream come true. Use an online shop to build this dream step by step. "
-    url: http://goody-bakery.com
+  - name: Co-Founder of Credarp Inc
+    description: "We make web and native mobile app at Credarp. Our product is elbum.in, a analytics tool for sport teams to track, collect and organize their statistics. We also develop Ruby on Rails and iOS projects.  The company has been founded at 2013 July. I run it with my partner Brian, Labrada and our 2 developers. "
+    url: http://facebook.com/credarp
     external: true
-    published_at: '2013-10'
-  - name: Red Box
-    description: "2013 summer, when I'm at womany. I'm the leader of this projects. In this projects, we not only sell the red-box, which contain things women needed when they having periods, but also develop a mobile app which can help women to record thier periods. The goal is to organize all resources of womany and provide better services to users."
-    url: http://red.womany.net/
+    published_at: '2013-07 ~ present'
+  - name: Founder of Dreamers' Day
+    description: "Dreamers' Day is the biggest student startup community in Taiwan. Brian and I started it because we believe that student should have entrepreneurship.  There had been 5 demo shows and  20 meet ups both in Taipei and Tainan, and over 300 students participanted in it."
+    url: http://dreamersday.tw
     external: true
-    published_at: '2013-09'
-  - name: NCKU graduation
-    description: "When My mom come to my graduation ceremony, I want her can know information on her mobile. Thus, this website is for my mom and for all the parents of students. :))"
-    url: http://ncku-graduation.tw/
+    published_at: '2011-10 ~ 2013-05'
+  - name: Product Manager of Gabble
+    description: "Gabble is a real time QA system base on people's trusted network. I worked with my friend Kenzou, Robbie and Brian to build a awesome product. I had a great time and get a lot of experience in this 8 month at Gabble."
+    url: http://blog.gabble.me 
     external: true
-    published_at: '2013-05'
-  - name: NCKU Course
-    description: "Students can find thier classmate more easily via this site. I build this site because once I enrolled in a course and we needed to find partners and prepare a group project with each other. However, their are 300 students. It's hard to find partners in real life but can easily find classmate here. (Deprecated)"
-    url: http://nckucourse.com
-    external: true
-    published_at: '2012-09'
-  - name: Dreamers Day
-    description: "My high school friend Roy is the organizer of dreamersday. Dreamersday is a students commnunity. Most of the members are trying to run a startup."
-    url: http://dreamersday.tw/
-    external: true
-    published_at: '2012-11'
+    published_at: '2012-04 ~ 2012-11' 
 
 organizations:
   - name: SITW (students in Taiwan)
@@ -61,38 +51,46 @@ experiences:
     duration: "2011-06 ~ 2012-06"
 
 educations:
-  - school_name: National Cheng Kung University
-    school_url: http://english.web.ncku.edu.tw/bin/home.php
+  - school_name: National Taiwan University
+    school_url: http://www.ntu.edu.tw/english/
     external: true
     degree: BS
-    field: Industrial and information management
-    duration: "2009-06 ~ present"
+    field: BioIndustry Communaction and Development
+    duration: "2009-07 ~ 2013-06"
 
 social_networks:
   - name: Facebook
-    url: https://www.facebook.com/GaryLai.CH
+    url: https://www.facebook.com/royLinKung
     icon: icon-facebook
     external: true
   - name: Twitter
-    url: https://twitter.com/garylai1990
+    url: https://twitter.com/roylinkung
     icon: icon-twitter
     external: true
-  - name: Github
-    url: https://github.com/garylai1990
-    icon: icon-github
-    external: true
-  - name: Google+
-    url: https://plus.google.com/u/0/112471435816092793964/
-    icon: icon-google-plus
-    external: true
   - name: LinkedIn
-    url: http://www.linkedin.com/in/garylai1990
+    url: http://www.linkedin.com/in/roylinkung
     icon: icon-linkedin
+    external: true
+  - name: contact
+    url: mailto:qwer789852@gmail.com
+    icon: icon-inbox
     external: true
 
 slides:
-  - name: Simple Rails Notification System
-    url: https://speakerdeck.com/garylai1990/rails-notification
+  - name: Social Traction For Apps
+    url: http://www.slideshare.net/roykung/social-traction-for-app
+    external: true
+  - name: Dreamers' day the first year review
+    url: http://www.slideshare.net/roykung/dreamers-day-the-first-year-review
+    external: true
+  - name: Airbnb find a better place to stay
+    url: http://www.slideshare.net/roykung/casestudyonairbnb
+    external: true  
+  - name: Dreamers' Day @NCKU
+    url:  http://www.slideshare.net/roykung/dreamers-day-3-ncku
+    external: true
+  - name: The entrepreneurship in University
+    url: http://www.slideshare.net/roykung/bicd-present
     external: true
 
 skills:
@@ -102,13 +100,15 @@ skills:
     duration: "2012-06 ~ 2013-06"
 
 blogs:
-  - name: Life
-    description: "Life, Thinking, Pets"
-    url: http://life.garylai.ch
-    external: true
   - name: Blog
-    description: "Learning note."
-    url: http://note.garylai.ch
+    description: "Startup, Product Design, Marketing"
+    url: http://roykung.com
+    external: true
+  - name: Life
+    description: "Life, Basketball, Realationship"
+    url: http://life.roykung.com
     external: true
 
+
 exclude: [".rvmrc", ".rbenv-version", ".gitignore", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "Procfile", "vendor"]
+
