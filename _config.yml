@@ -1,6 +1,6 @@
 name: About RoyLinKung
 url: http://about.roykung.com
-description: "林昆彥 (RoyLinKung). I'm a dreamer, singer and Basketball player, loving jogging, reading and cooking, now running a startup in Taipei, Taiwan."
+description: "林昆彥 (RoyLinKung). I'm a dreamer, singer and basketball player, loving jogging, reading and cooking, and now running a startup in Taipei, Taiwan."
 pygments: true
 
 profiles:
@@ -10,17 +10,17 @@ profiles:
 
 projects:
   - name: Co-Founder of Credarp Inc
-    description: "We make web and native mobile app at Credarp. Our product is elbum.in, a analytics tool for sport teams to track, collect and organize their statistics. We also develop Ruby on Rails and iOS projects.  The company has been founded at 2013 July. I run it with my partner Brian, Labrada and our 2 developers. "
+    description: "We make web and native mobile app at Credarp. Our product is elbum.in, an analytic tool for sport teams to track, collect and organize their statistics. We also develop Ruby on Rails and iOS projects.  The company was been estalblished in July 2013. I run it with my partner Brian, Labrada and our 2 developers. "
     url: http://facebook.com/credarp
     external: true
     published_at: '2013-07 ~ present'
   - name: Founder of Dreamers' Day
-    description: "Dreamers' Day is the biggest student startup community in Taiwan. Brian and I started it because we believe that student should have entrepreneurship.  There had been 5 demo shows and  20 meet ups both in Taipei and Tainan, and over 300 students participanted in it."
+    description: "Dreamers' Day is the biggest student startup community in Taiwan. Brian and I started it because we believed that students should have entrepreneurship.  There were 5 demo shows and  20 meet ups both in Taipei and Tainan, and over 300 students participated in it."
     url: http://dreamersday.tw
     external: true
     published_at: '2011-10 ~ 2013-05'
   - name: Product Manager of Gabble
-    description: "Gabble is a real time QA system base on people's trusted network. I worked with my friend Kenzou, Robbie and Brian to build a awesome product. I had a great time and get a lot of experience in this 8 month at Gabble."
+    description: "Gabble is a real time QA system based on people's trusted network. I worked with my friend Kenzou, Robbie and Brian to make a awesome product. I had a great time and got a lot of experiences in this 8 month at Gabble."
     url: http://blog.gabble.me 
     external: true
     published_at: '2012-04 ~ 2012-11' 
@@ -55,7 +55,7 @@ educations:
     school_url: http://www.ntu.edu.tw/english/
     external: true
     degree: BS
-    field: BioIndustry Communaction and Development
+    field: BioIndustry Communication and Development
     duration: "2009-07 ~ 2013-06"
 
 social_networks:
@@ -105,7 +105,7 @@ blogs:
     url: http://roykung.com
     external: true
   - name: Life
-    description: "Life, Basketball, Realationship"
+    description: "Life, Basketball, Relationship"
     url: http://life.roykung.com
     external: true
 
