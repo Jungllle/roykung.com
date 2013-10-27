@@ -3,56 +3,84 @@ font-family: 'Arvo', serif;
 font-family: 'Kelly Slab', cursive;
 font-family: 'Josefin Sans', sans-serif;
 */
+
 body {
-  margin: 10px;
-  padding: 5% 10%;
-  color: #333;
-  border: 1px dashed #BBB;
-  background-color: #FFFFFB;
-  background-image: url('../images/texture.png');
-  font-family: 'Josefin Sans', sans-serif;
-}
-a {
-  color: #6E75A4;
-  font-family: 'Arvo', serif;
+  background-color: #ffffff;
+  font-family: 'Gudea', sans-serif;
 }
 
-.site_name {
-  margin: 20px 0px;
-  font-size: 36px;
-  font-family: 'Kelly Slab', cursive;
+
+
+.navbar {
+  height: 80px;
+  background-color: #e84871;
+  position: relative;
 }
 
-.description {
-  padding: 0px 20px;
-  line-height: 24px;
-  font-size: 18px;
+.nav {
+  width: 150px;
+  margin: 0  auto;
+  padding-top: 25px;
 }
 
-.container {
-  padding: 20px 0px;
+.nav a {
+   font-size: 20px;
+   margin-top: 50px;
+   color: white;
+   font-family: "optima";
+   margin: 10px;
 }
 
-.title {
-  line-height: 24px;
-  font-size: 2em;
+.nav a:hover{
+   font-size: 20px;
+   margin-top: 50px;
+   color: white;
+   font-family: "optima";
+   margin: 10px;
+   border-bottom: 2px solid;
 }
+
+
 .content {
-  padding: 20px 40px;
-  font-size: 18px;
-}
-.content ul li {
-  list-style-type: square;
-}
-
-.content-list {
+   width: 720px;
+   position:relative;
+   display: block;
+   margin: 30px auto;
+   line-height: 38px;
 
 }
-.social-network {
-  margin-bottom: 20px;
+
+.content a {
+  color: #e84871;
 }
 
-.social-network a{
-  color: #333;
-  padding: 10px;
+.content a:hover {
+  color: #e84871;
+  border-bottom: 2px solid;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.content p {
+   font-size:18px;
+   color: #4C4646;
+}
+
+.avatar {
+  float: right;
+}
+
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.footer {
+  width: 720px;
+  border-top: 1px solid;
+  margin:0 auto;
 }

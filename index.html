@@ -1,95 +1,35 @@
 ---
 layout: default
-title: About | RoyLinKing
+title: About | RoyLinKung
 ---
-<div class="title">Profile:</div>
 
-<div class="content">
-  <ul>
-    {% for profile in site.profiles %}
-      <li><a href="{{ profile.url }}">{{ profile.name }}</a></li>
-    {% endfor %}
-  </ul>
+
+<div class="navbar">
+   <div class="nav">
+           <a href="/">About</a>
+           <a href="http://roykung.com">Blog</a>
+   </div>
 </div>
 
-<div class="social-network">
-  {% for sn in site.social_networks %}
-    <a target="_blank" href="{{ sn.url }}"><i class="{{ sn.icon }} icon-large"></i></a>
-  {% endfor %}
+<div class="row">
+   <div class="span10 content">
+      <h2>About</h2>
+      <div class="avatar">
+      <img src="../images/profile.png">
+     </div>
+      <p>My name is Roy Lin, I am the Co-founder of <a href="http://credarp.com">Credarp, Inc</a>, a sofiware company which making web and native mobile app.&nbsp I run it with my partner Brian, Labrada and our 2 developers. </p><br/>
+
+      <p>I am also the founder of <a href="http://dreamersday.tw">Dreamers' Day</a>, which is the biggest student startup community in Taiwan.&nbsp Brian and I started it because we believed that students should have entrepreneurship.&nbspThere were 5 demo shows and 20 meet ups both in Taipei and Tainan, and over 300 students participated in it.</p><br/>
+
+      <p>I share some interesting videos and ideas on <a href="http://life.roykung.com">Tumblr</a>.</p>
+      <p>You can find me on <a href="http://twitter.com/roylinkung">Twitter</a>, or drop me an <a href="mailto:roylinkung@gmail.com">email</a>.</p>
+  </div>
 </div>
 
-<div class="title">Summary:</div>
+<div class="span10 footer">
+        <p>Roylinkung is the co-founder of Credarp,Inc. This blog is about startup,product design and marketing.</p>
+     <div class="copyright">
+       <p>Copyright© 2013 Roylinkung All Rights Reserved.</p>
+     </div>
 
-<div class="content">
-  <ul>
-    {% for project in site.projects %}
-      <li><a target="_blank" href="{{ project.url}}">{{ project.name }}</a> ( {{ project.published_at }} )</li>
-      {{ project.description }}
-    {% endfor %}
-  </ul>
-</div>
 
-<!--<div class="title">Organization: </div>
-
-<div class="content">
-  <ul>
-    {% for organization in site.organizations %}
-      <li><a target="_blank" href="{{ organization.url}}">{{ organization.name }}</a></li>
-      {{ organization.description }}
-    {% endfor %}
-  </ul>
-</div>-->
-
-<!--<div class="title">Experiences: </div>
-
-<div class="content">
-  <ul>
-    {% for experience in site.experiences %}
-      <li><a target="_blank" href="{{ experience.company_url}}">{{ experience.company_name }}</a> ( {{ experience.duration }} )</li>
-      {{ experience.title }}
-    {% endfor %}
-  </ul>
-</div>-->
-
-<div class="title">Education: </div>
-
-<div class="content">
-  <ul>
-    {% for education in site.educations %}
-      <li><a target="_blank" href="{{ education.school_url}}">{{ education.school_name }}</a> ( {{ education.duration }} )</li>
-      <div class="content-list">Degree: {{ education.degree }}</div>
-      <div class="content-list">Major: {{ education.field }}</div>
-    {% endfor %}
-  </ul>
-</div>
-
-<!--<div class="title">Skills: </div>
-
-<div class="content">
-  <ul>
-    {% for skill in site.skills %}
-      <li><a target="_blank" href="{{ education.school_url}}">{{ skill.name }}</a> ( {{ skill.duration }} )</li>
-    {% endfor %}
-  </ul>
-</div>-->
-
-<div class="title">Blogs:</div>
-
-<div class="content">
-  <ul>
-    {% for blog in site.blogs %}
-      <li><a target="_blank" href="{{ blog.url}}"> {{ blog.name }} </a></li>
-      {{ blog.description }}
-    {% endfor %}
-  </ul>
-</div>
-
-<div class="title">Slides: </div>
-
-<div class="content">
-  <ul>
-    {% for slide in site.slides %}
-      <li><a target="_blank" href="{{ slide.url}}">{{ slide.name }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
