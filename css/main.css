@@ -56,7 +56,7 @@ body {
 
 .content a:hover {
   color: #e84871;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid;
 }
 
 .content h2 {
