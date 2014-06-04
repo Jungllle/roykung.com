@@ -2,7 +2,6 @@ require "rubygems"
 require 'rake'
 require 'yaml'
 require 'time'
-require 'hz2py'
 require 'json'
 require 'open-uri'
 
@@ -19,10 +18,6 @@ task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
   tags = ENV["tags"] || "[]"
-  #------ This command is using for render Chinese pinyin file name
-  slug = Hz2py.do(title.encode('utf-8'), :join_with => '-', :to_simplified => true)
-  slug = slug.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  #------
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
   rescue => e
