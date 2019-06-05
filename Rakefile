@@ -2,8 +2,6 @@ require "rubygems"
 require 'rake'
 require 'yaml'
 require 'time'
-require 'json'
-require 'open-uri'
 
 SOURCE = "."
 CONFIG = {
@@ -35,14 +33,6 @@ task :post do
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
-    post.puts "disqus: y"
-    post.puts "share: y"
-    post.puts "author: #{get_author_information('name')}"
-    post.puts "email: #{get_author_information('email')}"
-    post.puts "twitter: #{get_author_information('twitter-id')}"
-    post.puts "facebook: #{get_author_information('facebook-id')}"
-    post.puts "github: #{get_author_information('github-id')}"
-    post.puts "description: #{get_author_information('description')}"
     post.puts "---"
   end
 end # task :post
@@ -88,20 +78,6 @@ end
 def get_stdin(message)
   print message
   STDIN.gets.chomp
-end
-
-@uri = "http://member.sitw.tw/member.json"
-@result = JSON.parse(open(@uri).read)
-
-def get_author_information(info)
-  author_github_email = `git config user.email`
-  author_email = author_github_email.gsub!(/\n/, '')
-  @result.each { |e|
-    if author_email == e["email"]
-      return @author_information = e[info]
-    end
-  }
-  return @author_information = "Please add your information to http://member.sitw.tw/"
 end
 
 #Load custom rake scripts

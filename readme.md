@@ -1,51 +1,49 @@
-## 在自己的電腦跑起來
+# Roykung.com
 
-> 電腦請先安裝ruby
+於此紀念我們最好的朋友林昆彥
 
-```
-$ gem install jekyll
-$ bundle install
-$ jekyll serve --watch
-```
+In memory of our best friend, Roy Lin.
 
-打開瀏覽器到 [http://localhost:4000](http://localhost:4000)
+## Installation
 
-## 使用手冊:
+Setup your environment:
 
-### 新增文章:
+    bin/setup
 
-```
-$ rake post title="A Title"
-```
+## Development
 
-範例：
+Run Jekyll:
 
-```
-$ rake post title="範例"
-```
+    bundle exec jekyll serve
 
-就會在_post/下產生`2013-08-11-fan-li.md`
+Used tools:
+  - [Autoprefixer](https://github.com/postcss/autoprefixer)
+  - [Bower](http://bower.io/)
+  - [Circle CI](https://circleci.com/)
+  - [Html-proofer](https://github.com/gjtorikian/html-proofer)
+  - [Jekyll](http://jekyllrb.com/)
+  - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
+  - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
+  - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
 
-打開檔案最上面應該會產生出相關的資訊如下:
-
-### 預覽網站:
-
-除了上面`$ jekyll serve --watch`的方法看網站，也可以使用
+## Create a new post
 
 ```
-$ rake preview
+$ rake post title="New post title"
 ```
 
-打開瀏覽器到 [http://localhost:4000](http://localhost:4000)
+## Deploy to GitHub Pages
 
-## 發佈
+Run this in the root project folder in your console:
 
-```
-$ ./deploy
-```
+    bin/deploy
+
+[View this](https://github.com/nielsenramon/kickster#automated-deployment-with-circle-ci) for more info about automated deployment with Circle CI.
 
 ## Authors
 
-- @garylai1990
+- [@roykunglin](https://github.com/roykunglin)
 
 ## Contributors
+
+- [@imgarylai](https://github.com/imgarylai)

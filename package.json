@@ -1,0 +1,8 @@
+{
+  "name": "roykung.com",
+  "homepage": "https://roykung.com",
+  "dependencies": {
+    "jquery": "^3.4.0",
+    "normalize.css": "^8.0.1"
+  }
+}
