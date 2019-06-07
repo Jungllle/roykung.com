@@ -1,4 +1,4 @@
-# Roykung.com
+# Roykung.com [![CircleCI](https://circleci.com/gh/Jungllle/roykung.com.svg?style=svg)](https://circleci.com/gh/Jungllle/roykung.com)
 
 於此紀念我們最好的朋友林昆彥
 
