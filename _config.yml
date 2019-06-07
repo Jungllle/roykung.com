@@ -1,11 +1,46 @@
-name: About RoyLinKung
-url: http://about.roykung.com
-description: "林昆彥 (RoyLinKung). I'm a dreamer, singer and basketball player, loving jogging, reading and cooking, and now running a startup in Taipei, Taiwan."
+assets:
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
+  source_maps: false
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/yarn
+
+markdown: kramdown
+
+exclude:
+  - .travis.yml
+  - bin/*
+  - circle.yml
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - yarn.lock
+  - vendor
+  - node_modules
+  - .gitignore
+  - Rakefile
+
+ga_analytics: UA-55909361-6
+
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-sitemap
+
+permalink: pretty
+
+name: Roy Lin
+url: https://roykung.com
+description: "林昆彥 (Roy Lin). I'm a dreamer, singer and basketball player, loving jogging, reading and cooking, and now running a startup in Taipei, Taiwan."
 pygments: true
 
 profiles:
   - name: "RoyLinKung"
-    url: http://about.roykung.com
+    url: https://roykung.com
     external: true
 
 projects:
@@ -108,7 +143,3 @@ blogs:
     description: "Life, Basketball, Relationship"
     url: http://life.roykung.com
     external: true
-
-
-exclude: [".rvmrc", ".rbenv-version", ".gitignore", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "Procfile", "vendor"]
-
