@@ -11,6 +11,7 @@ jobs:
         environment:
           USER_NAME: jungllle
           USER_EMAIL: contact@jungllle.com
+          BUNDLER_VERSION: 2.0.2
 
     working_directory: ~/repo
 
@@ -23,7 +24,12 @@ jobs:
             - v1-dependencies-{{ checksum "Gemfile.lock" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
-
+      - run:
+          name: Configure Bundler
+          command: |
+            gem update --system
+            gem install bundler -v $BUNDLER_VERSION
+            bundle -v
       - run:
           name: install dependencies
           command: |
