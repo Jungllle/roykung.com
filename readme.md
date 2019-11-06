@@ -47,3 +47,5 @@ Run this in the root project folder in your console:
 ## Contributors
 
 - [@imgarylai](https://github.com/imgarylai)
+- [@linyiru](https://github.com/linyiru)
+
