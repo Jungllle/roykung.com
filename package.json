@@ -6,6 +6,6 @@
     "jquery": "^3.4.0"
   },
   "scripts": {
-    "build": "jekyll build && mv _site public"
+    "build": "bundle install --deployment && bundle exec jekyll build"
   }
 }
