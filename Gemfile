@@ -12,7 +12,7 @@ gem "jekyll-sitemap"
 gem "jemoji"
 gem "mini_magick"
 gem "sass"
-gem "sprockets", "4.0.0.beta6"
+gem "sprockets", "4.0.0.beta8"
 gem "uglifier"
 
 group :jekyll_plugins do
