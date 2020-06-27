@@ -1,11 +1,24 @@
 {
   "name": "roykung.com",
-  "homepage": "https://roykung.com",
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.0"
+    "bootstrap": "^4.5.0",
+    "next": "^9.4.4",
+    "next-seo": "^4.6.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1"
   },
   "scripts": {
-    "build": "bundle install --deployment && bundle exec jekyll build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "devDependencies": {
+    "@types/bootstrap": "4.5.0",
+    "@types/node": "^14.0.14",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "16.9.8",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.5"
   }
 }
