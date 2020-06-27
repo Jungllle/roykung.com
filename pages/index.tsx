@@ -44,7 +44,7 @@ function HomePage() {
       </Col>
       <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
         <div className="w-75 p-3 mx-auto">
-          <Image src="/profile.png" alt="Roy Lin 林昆彥" fluid />
+          <Image src="/profile.jpeg" alt="Roy Lin 林昆彥" fluid />
         </div>
       </Col>
     </Row>
