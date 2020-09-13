@@ -4,7 +4,7 @@ import Nav from "@components/Nav";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import Copyright from "@components/Copyright";
-import { DefaultSeo } from "next-seo/lib";
+import { DefaultSeo } from "next-seo";
 
 const App = ({ Component, pageProps }: AppProps) => (
   <div>
