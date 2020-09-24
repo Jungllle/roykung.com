@@ -32,7 +32,7 @@ const HomePage = () => (
       </p>
       <p>
         I share my slides on{" "}
-        <a href="https://www.slideshare.net/roykung">Slideshare</a> and
+        <a href="https://www.slideshare.net/roykung">Slideshare</a> and{" "}
         <a href="https://speakerdeck.com/roykung">SpeakDeck</a>.
       </p>
       <p>
