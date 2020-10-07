@@ -1053,10 +1053,10 @@
     lodash "^4.17.15"
     lodash-es "^4.17.15"
 
-"@types/bootstrap@4.5.0":
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-4.5.0.tgz#07a079d3ee2b1646491082d6162048d7bf4610b5"
-  integrity sha512-AWu7D+Cduyic75YptSRiXuCIy1c3SsmYk/9ixS68Ft2eAgg2wRj5U2M+7PK5zpakk4gTgfrWHeGxJqkSjttwyQ==
+"@types/bootstrap@4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-4.5.1.tgz#9e11a2ccc79e5d6c116239571629db859ed82a9d"
+  integrity sha512-5iAWnZnqHucloYQFlozKUTPw0+fLfKo8d4flGCiE1B1w91z/91UIqMDht/31RQJIwx0+u5SL4CJCbs79Z15M+A==
   dependencies:
     "@types/jquery" "*"
     popper.js "^1.14.1"
