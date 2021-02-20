@@ -30,7 +30,14 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.4.2", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.12.1":
+  version "7.12.18"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.18.tgz#af137bd7e7d9705a412b3caaf991fe6aaa97831b"
+  integrity sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.4.2", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.7":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -110,23 +117,31 @@
   resolved "https://registry.yarnpkg.com/@opentelemetry/context-base/-/context-base-0.14.0.tgz#c67fc20a4d891447ca1a855d7d70fa79a3533001"
   integrity sha512-sDOAZcYwynHFTbLo6n8kIbLiVF3a3BLkrmehJUyEbT9F+Smbi47kLGS2gG2g0fjBLR/Lr1InPD7kXL7FaTqEkw==
 
-"@popperjs/core@^2.0.0":
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.4.4.tgz#11d5db19bd178936ec89cd84519c4de439574398"
-  integrity sha512-1oO6+dN5kdIA3sKPZhRGJTfGVP4SWV6KqlMOwry4J3HfyD68sl/3KmG7DeYUzvN+RbhXDnv/D8vNNB8168tAMg==
+"@popperjs/core@^2.5.3":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.8.0.tgz#b90c28fa62aa9d821ac8dd1f527d080c766a8bde"
+  integrity sha512-3/bHDejUVbncu7zbBpiIOAbl61i5XATrFQl7NMBtgls0PJjU7VKHvf8pvavNcXriZy2Qp0Gds39KyvBGGtZO4A==
 
 "@restart/context@^2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@restart/context/-/context-2.1.4.tgz#a99d87c299a34c28bd85bb489cb07bfd23149c02"
   integrity sha512-INJYZQJP7g+IoDUh/475NlGiTeMfwTXUEr3tmRneckHIxNolGOW9CTq83S8cxq0CgJwwcMzMJFchxvlwe7Rk8Q==
 
-"@restart/hooks@^0.3.12", "@restart/hooks@^0.3.21":
+"@restart/hooks@^0.3.21":
   version "0.3.25"
   resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.25.tgz#11004139ad1c70d2f5965a8939dcb5aeb96aa652"
   integrity sha512-m2v3N5pxTsIiSH74/sb1yW8D9RxkJidGW+5Mfwn/lHb2QzhZNlaU1su7abSyT9EGf0xS/0waLjrf7/XxQHUk7w==
   dependencies:
     lodash "^4.17.15"
     lodash-es "^4.17.15"
+
+"@restart/hooks@^0.3.25":
+  version "0.3.26"
+  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.26.tgz#ade155a7b0b014ef1073391dda46972c3a14a129"
+  integrity sha512-7Hwk2ZMYm+JLWcb7R9qIXk1OoUg1Z+saKWqZXlrvFwT3w6UArVNWgxYOzf+PJoK9zZejp8okPAKTctthhXLt5g==
+  dependencies:
+    lodash "^4.17.20"
+    lodash-es "^4.17.20"
 
 "@types/bootstrap@4.5.1":
   version "4.5.1"
@@ -182,7 +197,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.9.11", "@types/react@^16.9.35":
+"@types/react@*", "@types/react@^16.9.11":
   version "16.9.49"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.49.tgz#09db021cf8089aba0cdb12a49f8021a69cce4872"
   integrity sha512-DtLFjSj0OYAdVLBbyjhuV9CdGVHCkHn2R+xr3XkBvK2rS1Y1tkc14XSGjYgm5Fjjr90AxH9tiSzc1pCFMGO06g==
@@ -194,6 +209,14 @@
   version "17.0.0"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.0.tgz#5af3eb7fad2807092f0046a1302b7823e27919b8"
   integrity sha512-aj/L7RIMsRlWML3YB6KZiXB3fV2t41+5RBGYF8z+tAKU43Px8C3cYUZsDvf1/+Bm4FK21QWBrDutu8ZJ/70qOw==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^3.0.2"
+
+"@types/react@>=16.9.35":
+  version "17.0.2"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.2.tgz#3de24c4efef902dd9795a49c75f760cbe4f7a5a8"
+  integrity sha512-Xt40xQsrkdvjn1EyWe1Bc0dJLcil/9x2vAuW7ya+PuQip4UYUaXyhzWmAbwRsdMgwOFHpfp7/FFZebDU6Y8VHA==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -727,7 +750,7 @@ diffie-hellman@^5.0.0:
     miller-rabin "^4.0.0"
     randombytes "^2.0.0"
 
-dom-helpers@^5.0.1, dom-helpers@^5.1.0, dom-helpers@^5.1.2:
+dom-helpers@^5.0.1, dom-helpers@^5.1.2, dom-helpers@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-5.2.0.tgz#57fd054c5f8f34c52a3eeffdb7e7e93cd357d95b"
   integrity sha512-Ru5o9+V8CpunKnz5LGgWXkmrH/20cGKwcHwS4m73zIvs54CN9epEmT/HLqFJW3kXpakAFkEdzgy1hzlJe3E4OQ==
@@ -1081,6 +1104,11 @@ lodash-es@^4.17.15:
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
   integrity sha512-rlrc3yU3+JNOpZ9zj5pQtxnx2THmvRykwL4Xlxoa8I9lHBlVbbyPhgyPMioxVZ4NqyxaVVtaJnzsyOidQIhyyQ==
 
+lodash-es@^4.17.20:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
+
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
@@ -1090,6 +1118,11 @@ lodash@^4.17.13, lodash@^4.17.15:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
+
+lodash@^4.17.20:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
@@ -1572,10 +1605,10 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-bootstrap@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-1.4.0.tgz#806a8b48b065cedfb28c6c5c7b0c0e3c3b53445d"
-  integrity sha512-0BMzgeUAxH126v7VYDzIXbHxQVHSnniPVKpz9fblumdQpWaiElMnnzk+u8h8DoELX0nCXwPlcUzgXqmpncdc2Q==
+react-bootstrap@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-1.5.0.tgz#86e4bd05ca3a0bd7486f7046643e9be5e2d86bbd"
+  integrity sha512-t1o4kP3coj2HIaBepJxGAc7HZ1fWGria/s0Yr9JUmNkCilyrnXtK209qn28vuZ4muhnA0uR0GMMXAMrLsLyiIw==
   dependencies:
     "@babel/runtime" "^7.4.2"
     "@restart/context" "^2.1.4"
@@ -1583,7 +1616,7 @@ react-bootstrap@1.4.0:
     "@types/classnames" "^2.2.10"
     "@types/invariant" "^2.2.33"
     "@types/prop-types" "^15.7.3"
-    "@types/react" "^16.9.35"
+    "@types/react" ">=16.9.35"
     "@types/react-transition-group" "^4.4.0"
     "@types/warning" "^3.0.0"
     classnames "^2.2.6"
@@ -1591,7 +1624,7 @@ react-bootstrap@1.4.0:
     invariant "^2.2.4"
     prop-types "^15.7.2"
     prop-types-extra "^1.1.0"
-    react-overlays "^4.1.0"
+    react-overlays "^4.1.1"
     react-transition-group "^4.4.1"
     uncontrollable "^7.0.0"
     warning "^4.0.3"
@@ -1615,16 +1648,16 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-overlays@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/react-overlays/-/react-overlays-4.1.0.tgz#755a890519b02e3904845172d5223ff2dfb1bb29"
-  integrity sha512-vdRpnKe0ckWOOD9uWdqykLUPHLPndIiUV7XfEKsi5008xiyHCfL8bxsx4LbMrfnxW1LzRthLyfy50XYRFNQqqw==
+react-overlays@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/react-overlays/-/react-overlays-4.1.1.tgz#0060107cbe1c5171a744ccda3fbf0556d064bc5f"
+  integrity sha512-WtJifh081e6M24KnvTQoNjQEpz7HoLxqt8TwZM7LOYIkYJ8i/Ly1Xi7RVte87ZVnmqQ4PFaFiNHZhSINPSpdBQ==
   dependencies:
-    "@babel/runtime" "^7.4.5"
-    "@popperjs/core" "^2.0.0"
-    "@restart/hooks" "^0.3.12"
+    "@babel/runtime" "^7.12.1"
+    "@popperjs/core" "^2.5.3"
+    "@restart/hooks" "^0.3.25"
     "@types/warning" "^3.0.0"
-    dom-helpers "^5.1.0"
+    dom-helpers "^5.2.0"
     prop-types "^15.7.2"
     uncontrollable "^7.0.0"
     warning "^4.0.3"
