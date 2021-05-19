@@ -17,7 +17,7 @@ const App = ({ Component, pageProps }: AppProps) => (
           "林昆彥 (Roy Lin). I'm a dreamer, singer and basketball player, loving jogging, reading and cooking, and now running a startup in Taipei, Taiwan.",
         type: "website",
         locale: "en",
-        url: "https://rokykung.com",
+        url: "https://roykung.com",
         site_name: "Roy Lin 林昆彥",
         images: [
           {
