@@ -130,10 +130,10 @@
     lodash "^4.17.20"
     lodash-es "^4.17.20"
 
-"@types/bootstrap@4.6.0":
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-4.6.0.tgz#ed7199081947f68d4b37700f8b0a662bd9af622d"
-  integrity sha512-uf3yXgYm9bUGGIKNoXHrBzbmXtm8QEM9dDwI+EDarocllEMBx7f3Mv5yCEj4OqkLihkhGlEzT9L1TlZ5IN793g==
+"@types/bootstrap@4.6.1":
+  version "4.6.1"
+  resolved "https://registry.yarnpkg.com/@types/bootstrap/-/bootstrap-4.6.1.tgz#7ba1814df4ac0d5abf91726faedcec4f4c6052dc"
+  integrity sha512-Frg9beNcvrS9gouBeJxkAq7UzoWh5W91J6FIIlJYquf9XE7f0lkqn096KjJ0U7Jgo17oNO4pxDICfXvsCotfWQ==
   dependencies:
     "@types/jquery" "*"
     popper.js "^1.14.1"
