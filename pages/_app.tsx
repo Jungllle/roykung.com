@@ -1,6 +1,6 @@
 import { AppProps } from "next/app";
 import React from "react";
-import Nav from "@components/Nav";
+import NavigationBar from "@components/NavigationBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import Copyright from "@components/Copyright";
@@ -34,7 +34,7 @@ const App = ({ Component, pageProps }: AppProps) => (
         cardType: "summary_large_image",
       }}
     />
-    <Nav/>
+    <NavigationBar/>
     <Container>
       <Component {...pageProps} />
       <Copyright/>
