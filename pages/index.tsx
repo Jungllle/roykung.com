@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
+
 const HomePage = () => (
   <Row className="mt-5 align-content-center">
     <Col xs={{span: 12, order: 2}} md={{span: 6, order: 1}}>
@@ -12,7 +13,6 @@ const HomePage = () => (
         success. <a href="https://stickerhd.com">StickerHD</a> is the best
         online custom die cut sticker service in Taiwan.
       </p>
-
       <p>
         Before Roy founded Jungllle, he was the also a co-founder of Credarp
         Inc, founded by Brian, Labrada and me at November 2013. Credarp builds
