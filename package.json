@@ -1,7 +1,7 @@
 {
   "name": "roykung.com",
   "dependencies": {
-    "bootstrap": "4.6.1",
+    "bootstrap": "5.1.3",
     "next": "12.0.9",
     "next-seo": "4.29.0",
     "react": "17.0.2",
@@ -15,7 +15,7 @@
     "export": "next export"
   },
   "devDependencies": {
-    "@types/bootstrap": "4.6.1",
+    "@types/bootstrap": "5.1.9",
     "@types/node": "16.11.21",
     "@types/react": "17.0.38",
     "@types/react-dom": "17.0.11",
