@@ -12,7 +12,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export && touch out/CNAME && echo \"roykung.com\" >> out/CNAME"
   },
   "devDependencies": {
     "@types/bootstrap": "4.6.1",
