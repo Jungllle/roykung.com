@@ -2,7 +2,7 @@
   "name": "roykung.com",
   "dependencies": {
     "bootstrap": "5.1.3",
-    "next": "12.1.5",
+    "next": "12.1.6",
     "next-seo": "5.4.0",
     "react": "18.1.0",
     "react-bootstrap": "2.3.1",
