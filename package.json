@@ -16,7 +16,7 @@
     "export": "next export"
   },
   "devDependencies": {
-    "@types/bootstrap": "5.1.12",
+    "@types/bootstrap": "5.1.13",
     "@types/node": "16.11.45",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
