@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@types/bootstrap": "5.2.4",
-    "@types/node": "16.11.58",
+    "@types/node": "16.11.59",
     "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
     "prettier": "2.7.1",
