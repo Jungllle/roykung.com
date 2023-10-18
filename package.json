@@ -19,7 +19,7 @@
     "@types/bootstrap": "5.2.8",
     "@types/node": "18.18.6",
     "@types/react": "18.2.29",
-    "@types/react-dom": "18.2.13",
+    "@types/react-dom": "18.2.14",
     "prettier": "3.0.3",
     "typescript": "5.2.2"
   },
