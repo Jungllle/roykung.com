@@ -25,6 +25,6 @@
   },
   "license": "MIT",
   "engines": {
-    "node": "20.8.1"
+    "node": "20.9.0"
   }
 }
