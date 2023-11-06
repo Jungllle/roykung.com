@@ -18,7 +18,7 @@
   "devDependencies": {
     "@types/bootstrap": "5.2.8",
     "@types/node": "20.8.10",
-    "@types/react": "18.2.35",
+    "@types/react": "18.2.36",
     "@types/react-dom": "18.2.14",
     "prettier": "3.0.3",
     "typescript": "5.2.2"
