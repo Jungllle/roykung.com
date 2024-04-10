@@ -21,7 +21,7 @@
     "@types/react": "18.2.75",
     "@types/react-dom": "18.2.24",
     "prettier": "3.2.5",
-    "typescript": "5.4.4"
+    "typescript": "5.4.5"
   },
   "license": "MIT",
   "engines": {
