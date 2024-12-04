@@ -12,8 +12,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next export"
+    "start": "next start"
   },
   "devDependencies": {
     "@types/bootstrap": "5.2.10",
