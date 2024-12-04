@@ -9,10 +9,13 @@ const youtubeVideos = [
 
 const SongsPage = () => {
   const Playlist = youtubeVideos.map((youtubeVideo) => (
-    <Col md={{span: 4, offset: 4}} key={youtubeVideo.id}>
+    <Col md={{span: 6, offset: 3}} key={youtubeVideo.id}>
       <iframe
-        src={`https://www.youtube.com/watch?v=${youtubeVideo.id}`}
-        allowFullScreen
+        width="560"
+        height="315"
+        loading="lazy"
+        src={`https://www.youtube.com/embed/${youtubeVideo.id}`}
+        title={youtubeVideo.title}
       />
     </Col>
   ));
