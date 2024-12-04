@@ -10,7 +10,7 @@ const youtubeVideos = [
 
 const SongsPage = () => {
   const Playlist = youtubeVideos.map(youtubeVideo =>
-    <Col md={{ span: 4, offset: 4 }}>
+    <Col md={{ span: 4, offset: 4 }} key={youtubeVideo.id}>
       <LiteYouTubeEmbed id={youtubeVideo.id} title={youtubeVideo.title}/>
     </Col>
   )
