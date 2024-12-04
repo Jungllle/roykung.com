@@ -6,8 +6,8 @@ const Copyright = () => {
     <Row className="mx-auto text-center my-5">
       <Col>
         {`Copyright © 2013 - ${new Date().getFullYear()} `}
-        <a href={`/`}>Roy Lin </a>
-        All Rights Reserved.
+        <a href={`/`}>Roy Lin</a>
+        &nbsp;All Rights Reserved.
       </Col>
     </Row>
   );
