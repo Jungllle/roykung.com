@@ -5,7 +5,7 @@
     "next": "15.1.0",
     "next-seo": "6.6.0",
     "react": "19.0.0",
-    "react-bootstrap": "2.10.6",
+    "react-bootstrap": "2.10.7",
     "react-dom": "19.0.0"
   },
   "scripts": {
