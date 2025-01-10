@@ -1424,9 +1424,9 @@
     urlpattern-polyfill "^10.0.0"
 
 "@opennextjs/cloudflare@^0.3.0":
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.3.6.tgz#1807ea3ab6f9ee8f305ec07258e56f67d0c15075"
-  integrity sha512-80QYTbwMaQgBVrOvKFNH0/mdRgCD+dFaAN9Cl/SrVyGqA+kiEu2JB0PJMdt0ZqDXibErmh83t4pdjKdvv5HY1A==
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.3.7.tgz#94b04a1fd84332f5f58992eafe0e3b1e1782bedd"
+  integrity sha512-sedXeFeSknvJkUr6g/15bn16T/EFfCYXW2JvbkT9rojXgmAtVwUeOjFVtRPsd+mf3NImPdeDZ/kz7Y7lZK8crQ==
   dependencies:
     "@dotenvx/dotenvx" "1.31.0"
     "@opennextjs/aws" "https://pkg.pr.new/@opennextjs/aws@688"
