@@ -2,65 +2,65 @@
 # yarn lockfile v1
 
 
-"@ast-grep/napi-darwin-arm64@0.34.3":
-  version "0.34.3"
-  resolved "https://registry.yarnpkg.com/@ast-grep/napi-darwin-arm64/-/napi-darwin-arm64-0.34.3.tgz#66f0a1cf209801f5bf83825787b798aa3b664168"
-  integrity sha512-0a8dS+mOP5TYRX3YDiejL1WXWoWga3wpMYZGSs6Ni+SlH1WEO8zyUHe/1z6jNWH8VMHfH9FSCy6+YaPTpiurCA==
+"@ast-grep/napi-darwin-arm64@0.34.4":
+  version "0.34.4"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-darwin-arm64/-/napi-darwin-arm64-0.34.4.tgz#603444778875d9f6a48865b30d82c988c252d778"
+  integrity sha512-igpZwfWZeG/iwa2m7/3RKMg6UnVOt5tPCPKPMfjX2qiD1oHgcNKwTBmUmXhGCyNgwBlW8z06iXnwNIA0i+rJrw==
 
-"@ast-grep/napi-darwin-x64@0.34.3":
-  version "0.34.3"
-  resolved "https://registry.yarnpkg.com/@ast-grep/napi-darwin-x64/-/napi-darwin-x64-0.34.3.tgz#483d77cd629d8d121cc650257d2ea8791affaa57"
-  integrity sha512-n70ha95Fk187B8tgnvR+ZW429EAs/rXktD0839Mdm2+fWjD+JSdB3SADzOGo2cKhuLpLOKnsvfF/bmu+C/p0YQ==
+"@ast-grep/napi-darwin-x64@0.34.4":
+  version "0.34.4"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-darwin-x64/-/napi-darwin-x64-0.34.4.tgz#ada5644ce0ae35d8e2d47591e611bdda5a207cc6"
+  integrity sha512-OqLjev/+IUW7lpLirDx7wb3iAhQkinMx9El8NWV0AipcJsbfJhQmUy2ppDqkglJVcdlh0NIaoTgWOXWya8yXzQ==
 
-"@ast-grep/napi-linux-arm64-gnu@0.34.3":
-  version "0.34.3"
-  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-arm64-gnu/-/napi-linux-arm64-gnu-0.34.3.tgz#9a2c85ba471295b045e9abe42c33a4717974d50e"
-  integrity sha512-2LBUvMVkBcO/CJ4ItgZ1MOSqDq2fRmhiLwFxIYjhjG7Rz+4ZNdRY+d7Sl596g0BChB4ffNv+M5HS8uUBuUax1w==
+"@ast-grep/napi-linux-arm64-gnu@0.34.4":
+  version "0.34.4"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-arm64-gnu/-/napi-linux-arm64-gnu-0.34.4.tgz#399520218390ace4613950773c3836705e0eb506"
+  integrity sha512-PtdV6ll45O4iLKsChDLtAdyvG5R+Y/sCsatxT5T4JTptQ5rsbOeA4ZDTU8ZJJ6qBlVkhlpKM6aBBdP3HUU8HLQ==
 
-"@ast-grep/napi-linux-arm64-musl@0.34.3":
-  version "0.34.3"
-  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-arm64-musl/-/napi-linux-arm64-musl-0.34.3.tgz#dd1f1e155b0c4f8d0af6d865a5da53fc9890dd0f"
-  integrity sha512-vlX4mOyVO1Oy2CdOIFi7HBPwMKzOyLdBpRCcu7pArBOQJkpJ2eS5GR5qSW15f7KPLTkUMpJq7juLz/rP6Rc79Q==
+"@ast-grep/napi-linux-arm64-musl@0.34.4":
+  version "0.34.4"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-arm64-musl/-/napi-linux-arm64-musl-0.34.4.tgz#90da8e1cbd0bf5e6a3e964843901c99dc93b1fdd"
+  integrity sha512-Vm+xWUUWkGmv22ov9/D9i0JLds6+46Wj9G6tdByLhlB/R3jJEcWfg2qxnLihEFwJXuk+ic3PdtR0XmLRIx66Rw==
 
-"@ast-grep/napi-linux-x64-gnu@0.34.3":
-  version "0.34.3"
-  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-x64-gnu/-/napi-linux-x64-gnu-0.34.3.tgz#3a8d6a7d314e2b9434b0b73afd57a153a35b86ca"
-  integrity sha512-F9TwAfZT/vjjxoPH9Fk8/PTNB95Hm2V/rtva+xMCxkTnhaSh0swM+ku3vavkZ4rwk+LfKPAY37pifEVWg4JPNQ==
+"@ast-grep/napi-linux-x64-gnu@0.34.4":
+  version "0.34.4"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-x64-gnu/-/napi-linux-x64-gnu-0.34.4.tgz#9b6119bf635e682d63464e853b000e14cd093cbd"
+  integrity sha512-O6NMaYIzVFq5uSmo/wPIAZkTqfOERr9biECjoMpMVWbPP1T9NfSoWeuYQu+W/zF/ucZDEDWGjsE/ZDNAG5SZgQ==
 
-"@ast-grep/napi-linux-x64-musl@0.34.3":
-  version "0.34.3"
-  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-x64-musl/-/napi-linux-x64-musl-0.34.3.tgz#87ace18850b09359a4abd6ce0a96279c3db7f658"
-  integrity sha512-2W0ZYsRxdVnwJ/BfnCOSKgfcZ2UFf5I+vF5aMmeAOplOg7vlFHb8XHSa4GqO0MoBfFTGKTH76bKwxLz8d38y1Q==
+"@ast-grep/napi-linux-x64-musl@0.34.4":
+  version "0.34.4"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-linux-x64-musl/-/napi-linux-x64-musl-0.34.4.tgz#c621ed2d101dcc7c6cb3e50ee8be71541b06737e"
+  integrity sha512-QAwcB716F84fPXcVjYjKL8sQ0iQONOZ9CkdoEmmY5YW/yxR8uEA6s0bLwWPqHl6QeUuDIlA3+hgHwarWoUrPrA==
 
-"@ast-grep/napi-win32-arm64-msvc@0.34.3":
-  version "0.34.3"
-  resolved "https://registry.yarnpkg.com/@ast-grep/napi-win32-arm64-msvc/-/napi-win32-arm64-msvc-0.34.3.tgz#32b5c568b777b58ded71c5fd0d2820909b7c994d"
-  integrity sha512-XRWHlZnO77dEjC7IM5aQRTBC/hc/08Hdl18baJL7smG2dYGJKonUA7BQns6Vt2i63sOEghclkDw6Pq0PD60dbw==
+"@ast-grep/napi-win32-arm64-msvc@0.34.4":
+  version "0.34.4"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-win32-arm64-msvc/-/napi-win32-arm64-msvc-0.34.4.tgz#c63db0ba5ef63c8a91601c350b533cbf6ee08cb1"
+  integrity sha512-dYvmAPo+p/jH6hBIxKd+T2u0STHp02cz4O6cuFFwQG13cIysXYRb4BnF1/wtKM0gFxeSsVZCE/ANoin1O3TJTQ==
 
-"@ast-grep/napi-win32-ia32-msvc@0.34.3":
-  version "0.34.3"
-  resolved "https://registry.yarnpkg.com/@ast-grep/napi-win32-ia32-msvc/-/napi-win32-ia32-msvc-0.34.3.tgz#fbfa7e1a3db309bf5c8fc7f0988d9c47909469c9"
-  integrity sha512-0jR3QIkuasSrEvsaGtsgMEvgEY8FVe4pemuW77hUOH/mhO4vxFOWny7w4kUaBxQkzJ5z3lbXVoqO4Uv9rpJsRA==
+"@ast-grep/napi-win32-ia32-msvc@0.34.4":
+  version "0.34.4"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-win32-ia32-msvc/-/napi-win32-ia32-msvc-0.34.4.tgz#6f55f4cc992e924e7ef08b0f410358afafbff954"
+  integrity sha512-iYk6L8Jxfk/AlUi2Ups2PHkKDwFP3Cl1DrScu9dL+nePNBIZVmyjN122PHdFtgmRFWjff6hGHWINHsESCGwsXg==
 
-"@ast-grep/napi-win32-x64-msvc@0.34.3":
-  version "0.34.3"
-  resolved "https://registry.yarnpkg.com/@ast-grep/napi-win32-x64-msvc/-/napi-win32-x64-msvc-0.34.3.tgz#21d7abe5165988050067b9172b9e3d4b26c63ee6"
-  integrity sha512-OY1Cswkz+0bRZgt9sLjzgyA+y0X164UFjwf5WTYpbCTPUlwdpJP6L7FqJNRMemzQp0qQwwRR7ejpBUF4o/V0Aw==
+"@ast-grep/napi-win32-x64-msvc@0.34.4":
+  version "0.34.4"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi-win32-x64-msvc/-/napi-win32-x64-msvc-0.34.4.tgz#d61acdd894f7a57b0bf9f05e25d1ec93e2c414db"
+  integrity sha512-Filq6uuYVHJPPpoNeGgYtbpzt1ElmQvK3CP7OoEoICX3zN3mff6s9fLhMIsO8wm4+PZpT8FrOQTB9XWPLjU4zw==
 
 "@ast-grep/napi@^0.34.1":
-  version "0.34.3"
-  resolved "https://registry.yarnpkg.com/@ast-grep/napi/-/napi-0.34.3.tgz#7056a8fa57f829a9ab1c7d523f91fed6f5cebb57"
-  integrity sha512-2yrnMrUw3NVm9hf+YKO+BOY3Aci/qau2vDo0lGtA7qGMma18XPUIOTdzm601k5gPHo4MfxPPZLoe9QdTUviANg==
+  version "0.34.4"
+  resolved "https://registry.yarnpkg.com/@ast-grep/napi/-/napi-0.34.4.tgz#484fff30980edba6f11d5e8997e5249f2916dd83"
+  integrity sha512-QesKWYy+DXiRQll5Wi2hDRPQ1fOWp2gdF1TFyvuZQZoPu2kVVTOOGX0ajpMm4D2mS9N5n0NB4fsG14ukGOnAlg==
   optionalDependencies:
-    "@ast-grep/napi-darwin-arm64" "0.34.3"
-    "@ast-grep/napi-darwin-x64" "0.34.3"
-    "@ast-grep/napi-linux-arm64-gnu" "0.34.3"
-    "@ast-grep/napi-linux-arm64-musl" "0.34.3"
-    "@ast-grep/napi-linux-x64-gnu" "0.34.3"
-    "@ast-grep/napi-linux-x64-musl" "0.34.3"
-    "@ast-grep/napi-win32-arm64-msvc" "0.34.3"
-    "@ast-grep/napi-win32-ia32-msvc" "0.34.3"
-    "@ast-grep/napi-win32-x64-msvc" "0.34.3"
+    "@ast-grep/napi-darwin-arm64" "0.34.4"
+    "@ast-grep/napi-darwin-x64" "0.34.4"
+    "@ast-grep/napi-linux-arm64-gnu" "0.34.4"
+    "@ast-grep/napi-linux-arm64-musl" "0.34.4"
+    "@ast-grep/napi-linux-x64-gnu" "0.34.4"
+    "@ast-grep/napi-linux-x64-musl" "0.34.4"
+    "@ast-grep/napi-win32-arm64-msvc" "0.34.4"
+    "@ast-grep/napi-win32-ia32-msvc" "0.34.4"
+    "@ast-grep/napi-win32-x64-msvc" "0.34.4"
 
 "@aws-crypto/crc32@5.2.0":
   version "5.2.0"
@@ -1816,10 +1816,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@opennextjs/aws@https://pkg.pr.new/@opennextjs/aws@715":
+"@opennextjs/aws@https://pkg.pr.new/@opennextjs/aws@722":
   version "3.4.1"
-  uid "67447f09f5eae7943a0ab7a6acc00b1897d62859"
-  resolved "https://pkg.pr.new/@opennextjs/aws@715#67447f09f5eae7943a0ab7a6acc00b1897d62859"
+  uid "948cd01bf5687bcb4c8a4d8fffcdd9802fe71e5c"
+  resolved "https://pkg.pr.new/@opennextjs/aws@722#948cd01bf5687bcb4c8a4d8fffcdd9802fe71e5c"
   dependencies:
     "@aws-sdk/client-cloudfront" "3.398.0"
     "@aws-sdk/client-dynamodb" "^3.398.0"
@@ -1839,13 +1839,13 @@
     urlpattern-polyfill "^10.0.0"
 
 "@opennextjs/cloudflare@^0.4.0":
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.4.3.tgz#e580567f95963c8a1baa195f12270f75bea2ee98"
-  integrity sha512-DUgD+kMv/1UYVNtHALZJhmqQ2nAdqHQqPqNEGGLVvoxM/t8tdNAlERx5riM6artUoP2PWDYvBMk6DHJ6potNxQ==
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.4.4.tgz#3d8d14e906ee939bcb34b27813fca6b0c43f0a67"
+  integrity sha512-PHSZepA9oVFE+HBWahfLiy9xMlWv5Y5Vjzf+Sg96ZDkN/Wlwmuh+1q6J1uN6g884uHUdxPXoCM/y3UnekMfqww==
   dependencies:
     "@ast-grep/napi" "^0.34.1"
     "@dotenvx/dotenvx" "1.31.0"
-    "@opennextjs/aws" "https://pkg.pr.new/@opennextjs/aws@715"
+    "@opennextjs/aws" "https://pkg.pr.new/@opennextjs/aws@722"
     enquirer "^2.4.1"
     glob "^11.0.0"
     ts-morph "^23.0.0"
