@@ -1839,9 +1839,9 @@
     urlpattern-polyfill "^10.0.0"
 
 "@opennextjs/cloudflare@^0.4.0":
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.4.5.tgz#af1894627818143b2fc1c663a45f893546235730"
-  integrity sha512-Isb65+fo9TRF/Gi9Gx0hnudze7ZVW1lkZ4mWGe2bZqNteEGjewuuYF8dxcxuIejIJWywBohhIn5drl5RTijpQA==
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.4.6.tgz#e7d55b136b0fa04dc841f850bd0f5b0cebcb57a0"
+  integrity sha512-Ie3mcjxcB4lEVCxvIm/rrjqlkiANFX4+6OIDKFnb+ELFwHy5TSoah0hKAXbRVZ6dlx01xXTJzpa6pr7dyYLKfg==
   dependencies:
     "@ast-grep/napi" "^0.34.1"
     "@dotenvx/dotenvx" "1.31.0"
