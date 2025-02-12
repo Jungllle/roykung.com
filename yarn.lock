@@ -1817,10 +1817,10 @@
     promise.series "^0.2.0"
     urlpattern-polyfill "^10.0.0"
 
-"@opennextjs/cloudflare@^0.4.0":
-  version "0.4.8"
-  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.4.8.tgz#9f0f40f6160ce44588f48a220beb78fd11e36651"
-  integrity sha512-Vo7iQwd9SQ5GjlkdsjEYMpZLww1RPEUeNNEPhQ0HfeyJ1Q94V3Gxc8YL9At++0JO8SiELQnG6eM/nhz3mlmoUQ==
+"@opennextjs/cloudflare@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.5.0.tgz#4faaaa13a963146572e8945cf50ffcbdd797178e"
+  integrity sha512-bOy9n26d3+R+oaKn6ACXIojByAhorc0uFiIQSgVQpa/L/KXRdIwWsyh4+68J1hfFWAC/VehEfPcKVg5hLLul4g==
   dependencies:
     "@ast-grep/napi" "^0.34.1"
     "@dotenvx/dotenvx" "1.31.0"
