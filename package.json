@@ -21,8 +21,8 @@
     "@opennextjs/cloudflare": "^0.5.0",
     "@types/bootstrap": "5.2.10",
     "@types/node": "22.13.4",
-    "@types/react": "19.0.9",
-    "@types/react-dom": "19.0.3",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
     "prettier": "3.5.1",
     "typescript": "5.7.3",
     "wrangler": "^3.92.0"
