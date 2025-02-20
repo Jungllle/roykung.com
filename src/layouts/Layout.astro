@@ -1,0 +1,63 @@
+---
+import NavigationBar from '../components/NavigationBar.astro';
+import Copyright from '../components/Copyright.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { 
+  title = 'Roy Lin 林昆彥',
+  description = '林昆彥 (Roy Lin). I\'m a dreamer, singer and basketball player, loving jogging, reading and cooking, and now running a startup in Taipei, Taiwan.'
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://roykung.com" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://roykung.com/profile.jpeg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://roykung.com" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="https://roykung.com/profile.jpeg" />
+    <meta name="twitter:site" content="@roylinkung" />
+    <meta name="twitter:creator" content="@roylinkung" />
+  </head>
+  <body class="min-h-screen bg-white">
+    <NavigationBar />
+    <main class="container mx-auto px-4 py-8">
+      <slot />
+      <Copyright />
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+  }
+</style> 
