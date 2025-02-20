@@ -1,5 +1,8 @@
-main = ".worker-next/index.mjs"
-name = "roykung.com"
-compatibility_date = "2024-09-23"
+name = "roykung-com"
+main = "./.output/worker/entry.mjs"
+compatibility_date = "2024-02-20"
 compatibility_flags = ["nodejs_compat"]
 assets = { directory = ".worker-next/assets", binding = "ASSETS" }
+
+[site]
+bucket = "./.output/client"
