@@ -118,3 +118,5 @@ dist
 .vercel
 
 gh-pages*
+
+.astro
