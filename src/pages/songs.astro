@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const youtubeVideos = [
+  {
+    title: 'OLIVIA ONG [ 如燕 ] Official Music Video (夏夜晚風Live音樂會)',
+    id: 'rnX00KoNf2I',
+  },
+];
+---
+
+<Layout title="喜歡的歌曲 | Roy Lin 林昆彥">
+  <div class="mt-8">
+    <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8">喜歡的歌曲</h1>
+    <div class="space-y-8">
+      {youtubeVideos.map((video) => (
+        <div class="mx-auto max-w-3xl">
+          <div class="aspect-w-16 aspect-h-9">
+            <iframe
+              class="w-full h-full rounded-lg shadow-lg"
+              src={`https://www.youtube.com/embed/${video.id}`}
+              title={video.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            />
+          </div>
+          <h2 class="mt-4 text-lg font-medium text-gray-900">{video.title}</h2>
+        </div>
+      ))}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .aspect-w-16 {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  
+  .aspect-w-16 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style> 
