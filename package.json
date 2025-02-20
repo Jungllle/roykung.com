@@ -1,31 +1,32 @@
 {
   "name": "roykung.com",
-  "dependencies": {
-    "bootstrap": "5.3.3",
-    "next": "15.1.7",
-    "next-seo": "6.6.0",
-    "react": "19.0.0",
-    "react-bootstrap": "2.10.9",
-    "react-dom": "19.0.0"
-  },
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "build:worker": "cloudflare",
-    "dev:worker": "wrangler dev --port 8771",
-    "preview:worker": "npm run build:worker && npm run dev:worker",
-    "deploy:worker": "npm run build:worker && wrangler deploy"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.0.10",
+    "@astrojs/tailwind": "^5.1.0",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
+    "astro": "^4.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.1"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "^0.5.0",
-    "@types/bootstrap": "5.2.10",
-    "@types/node": "22.13.5",
-    "@types/react": "19.0.10",
-    "@types/react-dom": "19.0.4",
-    "prettier": "3.5.2",
-    "typescript": "5.7.3",
-    "wrangler": "^3.92.0"
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "prettier": "3.5.1",
+    "prettier-plugin-astro": "^0.13.0",
+    "typescript": "^5.3.3"
   },
   "license": "MIT",
   "engines": {
