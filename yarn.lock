@@ -1806,9 +1806,9 @@
     urlpattern-polyfill "^10.0.0"
 
 "@opennextjs/cloudflare@^0.5.0":
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.5.4.tgz#9aa39a11de331e25bfc91abf06715d7febcce37a"
-  integrity sha512-E70jf5tHOq7XxcMZIWl6Pm1wPhfNqX80mKlIJ9uJdNaQqC2pWH9ua/WyDSrXOu4vnvXJ/PjDlFzyUR72AxwNpQ==
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/@opennextjs/cloudflare/-/cloudflare-0.5.5.tgz#7154cd1838254b9984e249bd2d5f9cc075ff1437"
+  integrity sha512-xw1o0e3CvaSdF3rsErkNaClVKMIkZut8je04pDMwm2pleuDjiqE58ZzItcFoDwHPBicy2AScjG3+qp1MgyR66A==
   dependencies:
     "@ast-grep/napi" "^0.34.1"
     "@dotenvx/dotenvx" "1.31.0"
