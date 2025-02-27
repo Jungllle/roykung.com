@@ -4,13 +4,10 @@ import react from '@astrojs/react';
 import cloudflare from '@astrojs/cloudflare';
 
 export default defineConfig({
-  integrations: [
-    tailwind(),
-    react(),
-  ],
+  integrations: [tailwind(), react()],
   output: 'server',
   adapter: cloudflare({
-    mode: 'directory'
+    imageService: 'cloudflare',
   }),
   site: 'https://roykung.com',
 }); 
