@@ -8,16 +8,167 @@ const { title, description, pubDate, heroImage } = Astro.props;
 ---
 
 <Layout title={title} description={description}>
-  <main>
-    <article>
-      <div class="title">
-        <div class="date">
-          <FormattedDate date={pubDate} />
+  <div class="bg-white py-12 sm:py-16">
+    <div class="mx-auto max-w-3xl px-6 lg:px-8">
+      <article>
+        <!-- Header Section -->
+        <div class="mb-10 text-center">
+          <div
+            class="flex items-center justify-center mb-4 text-sm text-gray-500"
+          >
+            <span
+              class="inline-flex items-center rounded-full bg-gray-50 px-3 py-1 text-sm"
+            >
+              <FormattedDate date={pubDate} />
+            </span>
+          </div>
+          <h1
+            class="text-pretty text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-4"
+          >
+            {title}
+          </h1>
+          {
+            description && (
+              <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                {description}
+              </p>
+            )
+          }
         </div>
-        <h1>{title}</h1>
-        <hr />
-      </div>
-      <slot />
-    </article>
-  </main>
+
+        <!-- Hero Image (if available) -->
+        {
+          heroImage && (
+            <div class="mb-10">
+              <img
+                src={heroImage}
+                alt={`Cover image for ${title}`}
+                class="w-full h-auto rounded-lg shadow-md object-cover"
+              />
+            </div>
+          )
+        }
+
+        <!-- Divider -->
+        <div class="relative mb-10">
+          <div class="absolute inset-0 flex items-center" aria-hidden="true">
+            <div class="w-full border-t border-gray-200"></div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="prose prose-lg prose-gray mx-auto max-w-none">
+          <slot />
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-16 pt-8 border-t border-gray-200">
+          <div class="flex justify-between items-center">
+            <a
+              href="/blog"
+              class="text-sm font-medium text-gray-600 hover:text-gray-900 inline-flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 mr-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"></path>
+              </svg>
+              返回文章列表
+            </a>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Share on Twitter</span>
+                <svg
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Share on Facebook</span>
+                <svg
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M20 10c0-5.523-4.477-10-10-10S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z"
+                    clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  /* Enhance the prose styling */
+  :global(.prose) {
+    --tw-prose-body: #374151;
+    --tw-prose-headings: #111827;
+    --tw-prose-lead: #4b5563;
+    --tw-prose-links: #111827;
+    --tw-prose-bold: #111827;
+    --tw-prose-counters: #6b7280;
+    --tw-prose-bullets: #d1d5db;
+    --tw-prose-hr: #e5e7eb;
+    --tw-prose-quotes: #111827;
+    --tw-prose-quote-borders: #e5e7eb;
+    --tw-prose-captions: #6b7280;
+    --tw-prose-code: #111827;
+    --tw-prose-pre-code: #e5e7eb;
+    --tw-prose-pre-bg: #1f2937;
+    --tw-prose-th-borders: #d1d5db;
+    --tw-prose-td-borders: #e5e7eb;
+  }
+
+  :global(.prose p) {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+
+  :global(.prose img) {
+    border-radius: 0.375rem;
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  :global(.prose a) {
+    text-decoration: none;
+    font-weight: 500;
+    color: #2563eb;
+    transition: color 0.15s ease;
+  }
+
+  :global(.prose a:hover) {
+    color: #1d4ed8;
+    text-decoration: underline;
+  }
+
+  :global(.prose blockquote) {
+    border-left-width: 0.25rem;
+    border-left-color: #e5e7eb;
+    padding-left: 1rem;
+    font-style: italic;
+    color: #4b5563;
+  }
+</style>

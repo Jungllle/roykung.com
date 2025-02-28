@@ -1,27 +1,62 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import FormattedDate from "../../components/FormattedDate.astro";
-import { getCollection } from 'astro:content';
-const posts = (await getCollection('blog')).sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+import { getCollection } from "astro:content";
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
 <Layout title="所有文章">
-    <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
-        <ul>
-            {
-                posts.map((post) => (
-                        <li>
-                            <a href={`/blog/${post.id}/`}>
-                                <h4 class="title">{post.data.title}</h4>
-                                <p class="date">
-                                    <FormattedDate date={post.data.pubDate}/>
-                                </p>
-                            </a>
-                        </li>
-                ))
-            }
-        </ul>
+  <div class="bg-white py-12 sm:py-16">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl">
+        <h2
+          class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl"
+        >
+          部落格文章
+        </h2>
+
+        <div
+          class="mt-10 space-y-12 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16"
+        >
+          {
+            posts.map((post) => (
+              <article class="flex max-w-xl flex-col items-start">
+                <div class="flex items-center gap-x-4 text-xs">
+                  <time
+                    datetime={post.data.pubDate.toISOString()}
+                    class="text-gray-500"
+                  >
+                    <FormattedDate date={post.data.pubDate} />
+                  </time>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold text-gray-900 group-hover:text-gray-600">
+                    <a href={`/blog/${post.id}/`}>
+                      <span class="absolute inset-0" />
+                      {post.data.title}
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm text-gray-600">
+                    {post.data.description}
+                  </p>
+                </div>
+              </article>
+            ))
+          }
+        </div>
+      </div>
     </div>
+  </div>
 </Layout>
+
+<style>
+  .group {
+    position: relative;
+  }
+
+  .group:hover h3 {
+    color: #4b5563;
+  }
+</style>
