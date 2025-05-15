@@ -120,3 +120,4 @@ dist
 gh-pages*
 
 .astro
+.wrangler
