@@ -35,6 +35,6 @@
   },
   "license": "MIT",
   "engines": {
-    "node": "22.14.0"
+    "node": "22.15.1"
   }
 }
