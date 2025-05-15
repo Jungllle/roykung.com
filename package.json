@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.5.3",
-    "@astrojs/mdx": "^4.1.0",
-    "@astrojs/react": "^4.2.0",
+    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/react": "^4.2.7",
     "@headlessui/react": "^2.0.0",
     "@heroicons/react": "^2.1.1",
     "@tailwindcss/vite": "^4.0.9",

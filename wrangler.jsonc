@@ -1,0 +1,6 @@
+{
+  "name": "roykung-com",
+  "compatibility_date": "2024-09-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "pages_build_output_dir": "dist"
+} 
