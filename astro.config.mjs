@@ -3,6 +3,7 @@ import react from '@astrojs/react';
 import cloudflare from '@astrojs/cloudflare';
 import tailwindcss from "@tailwindcss/vite";
 import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   vite: {
@@ -17,7 +18,8 @@ export default defineConfig({
   },
   integrations: [
     mdx(),
-    react()
+    react(),
+    sitemap()
   ],
   output: 'server',
   adapter: cloudflare(),
