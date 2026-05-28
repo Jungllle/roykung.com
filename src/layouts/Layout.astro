@@ -24,6 +24,8 @@ const {
   publishedDate,
 } = Astro.props;
 
+const docTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
+
 const siteUrl = Astro.site ?? new URL('https://roykung.com');
 const canonical = new URL(Astro.url.pathname, siteUrl).href;
 const imageUrl = new URL(image, siteUrl).href;
@@ -58,11 +60,14 @@ const jsonLd = isArticle
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{docTitle}</title>
     <meta name="description" content={description} />
     <meta name="author" content={AUTHOR} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link
       rel="sitemap"
       type="application/xml"
@@ -74,7 +79,7 @@ const jsonLd = isArticle
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:locale" content="zh_TW" />
     <meta property="og:url" content={canonical} />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={docTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={imageUrl} />
     {
@@ -90,7 +95,7 @@ const jsonLd = isArticle
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonical} />
-    <meta property="twitter:title" content={title} />
+    <meta property="twitter:title" content={docTitle} />
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={imageUrl} />
     <meta name="twitter:site" content="@roylinkung" />
