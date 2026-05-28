@@ -1,7 +1,19 @@
 {
-  "automerge": true,
-  "automergeStrategy": "rebase",
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:recommended",
+    "group:allNonMajor",
+    ":semanticCommits",
+    ":maintainLockFilesWeekly"
+  ],
+  "automerge": true,
+  "platformAutomerge": true,
+  "automergeStrategy": "squash",
+  "packageRules": [
+    {
+      "description": "Review major updates manually instead of auto-merging",
+      "matchUpdateTypes": ["major"],
+      "automerge": false
+    }
   ]
 }
