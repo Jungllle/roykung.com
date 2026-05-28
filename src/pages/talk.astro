@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+
+type Talk = {
+  title: string;
+  url: string;
+  date: string;
+};
+
+const talks: Talk[] = [
+  {
+    title: "資訊科技與創新期末專題 - Sonarview",
+    url: "https://www.slideshare.net/roykung/sonarview",
+    date: "2012-06-19",
+  },
+  {
+    title: "大學生涯要有的創業精神 — 生傳系分享會",
+    url: "https://speakerdeck.com/roykung/da-xue-sheng-ya-yao-you-de-chuang-ye-jing-shen",
+    date: "2012-06-05",
+  },
+  {
+    title: "Gabble, Inc Case Study on Foursquare",
+    url: "https://www.slideshare.net/roykung/something-about-foursquare",
+    date: "2012-08-15",
+  },
+  {
+    title: "Gabble, Inc x IEH Case Study on Airbnb",
+    url: "https://www.slideshare.net/roykung/casestudyonairbnb",
+    date: "2012-08-24",
+  },
+  {
+    title: "iOS 6 剛發佈時介紹與 iOS 5 有何不同",
+    url: "https://www.slideshare.net/roykung/ios-6-change",
+    date: "2012-08-31",
+  },
+  {
+    title: "Dreamers' Day 台南場 — 台灣大學生適合創業嗎？",
+    url: "https://www.slideshare.net/roykung/dreamers-day-3-ncku",
+    date: "2012-09-22",
+  },
+  {
+    title: "App 在設計與社群上的 4 個重要議題",
+    url: "https://www.slideshare.net/roykung/social-traction-for-app",
+    date: "2012-10-11",
+  },
+  {
+    title: "Dreamers' Day 開場與一週年回顧",
+    url: "https://www.slideshare.net/roykung/dreamers-day-the-first-year-review",
+    date: "2012-12-14",
+  },
+  {
+    title: "Airbnb for Carpo",
+    url: "https://www.slideshare.net/roykung/aibnb-for-carpo",
+    date: "2013-05-06",
+  },
+];
+
+const sorted = talks
+  .map((t) => ({ ...t, pubDate: new Date(t.date) }))
+  .sort((a, b) => b.pubDate.valueOf() - a.pubDate.valueOf());
+
+const source = (url: string) =>
+  url.includes("speakerdeck.com") ? "SpeakerDeck" : "SlideShare";
+
+const years = sorted.map((t) => t.pubDate.getFullYear());
+const firstYear = Math.min(...years);
+const lastYear = Math.max(...years);
+---
+
+<Layout
+  title="演講與分享 | Roy Lin 林昆彥"
+  description="林昆彥 (Roy Lin) 的演講與簡報分享 — 創業、產品、科技主題。"
+>
+  <div>
+    <header class="mb-12 border-b border-gray-200 pb-8">
+      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        演講與分享
+      </h1>
+      <p class="mt-4 text-base text-gray-500">
+        {sorted.length} 場簡報與分享{
+          firstYear === lastYear
+            ? `（${firstYear}）`
+            : `（${firstYear} – ${lastYear}）`
+        }
+      </p>
+    </header>
+
+    <ul class="space-y-8">
+      {
+        sorted.map((talk) => (
+          <li class="group relative">
+            <a
+              href={talk.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block -mx-4 rounded-xl px-4 py-3 transition-colors hover:bg-gray-50"
+            >
+              <div class="flex items-center gap-x-3 text-xs font-medium uppercase tracking-wide text-gray-400">
+                <time datetime={talk.pubDate.toISOString()}>
+                  <FormattedDate date={talk.pubDate} />
+                </time>
+                <span aria-hidden="true">·</span>
+                <span>{source(talk.url)}</span>
+              </div>
+              <h2 class="mt-1.5 inline-flex items-center gap-x-1.5 text-lg font-semibold leading-snug text-gray-900 group-hover:text-blue-700">
+                {talk.title}
+                <svg
+                  class="h-4 w-4 flex-none text-gray-300 group-hover:text-blue-700"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                  />
+                </svg>
+              </h2>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Layout>

@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Roy Lin 林昆彥">
-  <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+  <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
     <div class="order-2 md:order-1">
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About</h1>
       <div class="mt-6 space-y-6 text-base text-gray-700">
@@ -43,8 +43,12 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
     <div class="order-1 md:order-2">
-      <div class="mx-auto w-3/4">
-        <img src="/profile.jpeg" alt="Roy Lin 林昆彥" class="rounded-lg shadow-lg" />
+      <div class="mx-auto w-3/4 overflow-hidden rounded-2xl shadow-lg">
+        <img
+          src="/profile.jpeg"
+          alt="Roy Lin 林昆彥"
+          class="block h-auto w-full object-cover"
+        />
       </div>
     </div>
   </div>
