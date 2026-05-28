@@ -6,9 +6,27 @@ type Talk = {
   title: string;
   url: string;
   date: string;
+  description?: string;
 };
 
 const talks: Talk[] = [
+  {
+    title: "【104 UBA】化悲憤為力量，臺大闖進全國八強",
+    url: "https://basketball.biji.co/index.php?q=news&act=info&id=7431",
+    date: "2016-03-31",
+  },
+  {
+    title: "創業人氣王 Pitch Night — elbum in：球隊數據記錄服務",
+    url: "https://www.youtube.com/watch?v=DPrZkcElRuI",
+    date: "2014-03-14",
+  },
+  {
+    title: "elbum in 球隊數據記錄服務，造就你傑出表現！",
+    url: "https://www.youtube.com/watch?v=29y2392UCLc",
+    date: "2014-02-12",
+    description:
+      "elbum 是一款團隊運動數據記錄的網路服務，結合 Web 與 App 幫助使用者記錄運動成績以獲得更精確的數據分析，進而提升運動表現。我們想讓自己有更好的表現而興起做 elbum 的念頭。elbum 不只是個網路服務，更是一種態度：Improve with Technology.",
+  },
   {
     title: "資訊科技與創新期末專題 - Sonarview",
     url: "https://www.slideshare.net/roykung/sonarview",
@@ -61,7 +79,13 @@ const sorted = talks
   .sort((a, b) => b.pubDate.valueOf() - a.pubDate.valueOf());
 
 const source = (url: string) =>
-  url.includes("speakerdeck.com") ? "SpeakerDeck" : "SlideShare";
+  url.includes("youtube.com") || url.includes("youtu.be")
+    ? "YouTube"
+    : url.includes("biji.co")
+      ? "運動筆記"
+      : url.includes("speakerdeck.com")
+        ? "SpeakerDeck"
+        : "SlideShare";
 
 const years = sorted.map((t) => t.pubDate.getFullYear());
 const firstYear = Math.min(...years);
@@ -78,7 +102,7 @@ const lastYear = Math.max(...years);
         演講與分享
       </h1>
       <p class="mt-4 text-base text-gray-500">
-        {sorted.length} 場簡報與分享{
+        {sorted.length} 則演講、影片與報導{
           firstYear === lastYear
             ? `（${firstYear}）`
             : `（${firstYear} – ${lastYear}）`
@@ -120,6 +144,11 @@ const lastYear = Math.max(...years);
                   />
                 </svg>
               </h2>
+              {talk.description && (
+                <p class="mt-1.5 line-clamp-2 text-sm leading-relaxed text-gray-500">
+                  {talk.description}
+                </p>
+              )}
             </a>
           </li>
         ))
