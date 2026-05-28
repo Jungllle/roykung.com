@@ -4,6 +4,8 @@
   "account_id": "d71f0bf817919431312c711f0543a272",
   "compatibility_date": "2026-04-15",
   "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "preview_urls": false,
   "routes": [
     { "pattern": "roykung.com/*", "zone_name": "roykung.com" },
     { "pattern": "about.roykung.com/*", "zone_name": "roykung.com" }
