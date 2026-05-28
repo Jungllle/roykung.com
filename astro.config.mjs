@@ -20,8 +20,6 @@ export default defineConfig({
     react()
   ],
   output: 'server',
-  adapter: cloudflare({
-    imageService: 'cloudflare',
-  }),
+  adapter: cloudflare(),
   site: 'https://roykung.com',
 });
