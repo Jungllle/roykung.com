@@ -9,11 +9,25 @@
   "automerge": true,
   "platformAutomerge": true,
   "automergeStrategy": "squash",
+  "minimumReleaseAge": "3 days",
+  "schedule": [
+    "before 5am on monday"
+  ],
+  "dependencyDashboard": true,
+  "vulnerabilityAlerts": {
+    "automerge": true,
+    "schedule": []
+  },
   "packageRules": [
     {
       "description": "Review major updates manually instead of auto-merging",
       "matchUpdateTypes": ["major"],
       "automerge": false
+    },
+    {
+      "description": "Group GitHub Actions updates together",
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions dependencies"
     }
   ]
 }
