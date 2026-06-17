@@ -25,12 +25,15 @@
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.19",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
+    "semantic-release": "^25.0.5",
     "typescript": "^6.0.3",
     "wrangler": "^4.95.0"
   },
