@@ -10,6 +10,7 @@
     "astro": "astro",
     "build:worker": "astro build",
     "deploy:worker": "wrangler deploy",
+    "lint": "oxlint",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage"
@@ -36,6 +37,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitest/coverage-v8": "^4.1.9",
     "jsdom": "^29.1.1",
+    "oxlint": "^1.70.0",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "semantic-release": "^25.0.5",
