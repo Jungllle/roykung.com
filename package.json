@@ -13,7 +13,8 @@
     "lint": "oxlint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.6.0",
@@ -36,7 +37,9 @@
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "@vitest/coverage-v8": "^4.1.9",
+    "husky": "^9.1.7",
     "jsdom": "^29.1.1",
+    "lint-staged": "^17.0.7",
     "oxlint": "^1.70.0",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
@@ -48,5 +51,14 @@
   "license": "MIT",
   "engines": {
     "node": "24.16.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "oxlint",
+      "prettier --write"
+    ],
+    "*.{astro,json,md}": [
+      "prettier --write"
+    ]
   }
 }
