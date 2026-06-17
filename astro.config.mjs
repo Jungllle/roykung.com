@@ -22,6 +22,6 @@ export default defineConfig({
     sitemap()
   ],
   output: 'server',
-  adapter: cloudflare(),
+  adapter: process.env.VITEST ? undefined : cloudflare(),
   site: 'https://roykung.com',
 });

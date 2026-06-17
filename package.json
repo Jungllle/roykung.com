@@ -9,7 +9,10 @@
     "preview": "astro preview",
     "astro": "astro",
     "build:worker": "astro build",
-    "deploy:worker": "wrangler deploy"
+    "deploy:worker": "wrangler deploy",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.6.0",
@@ -31,10 +34,13 @@
     "@tailwindcss/typography": "^0.5.19",
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
+    "@vitest/coverage-v8": "^4.1.9",
+    "jsdom": "^29.1.1",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "semantic-release": "^25.0.5",
     "typescript": "^6.0.3",
+    "vitest": "^4.1.9",
     "wrangler": "^4.95.0"
   },
   "license": "MIT",
