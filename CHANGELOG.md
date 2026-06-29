@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/Jungllle/roykung.com/compare/v1.0.1...v1.0.2) (2026-06-29)
+
+### Bug Fixes
+
+- **deps:** update astro monorepo ([38baf5d](https://github.com/Jungllle/roykung.com/commit/38baf5d4aa7296aa962cfdf56abb210fa145dd64))
+
 ## [1.0.1](https://github.com/Jungllle/roykung.com/compare/v1.0.0...v1.0.1) (2026-06-23)
 
 ### Bug Fixes
