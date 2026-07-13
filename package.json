@@ -44,7 +44,7 @@
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
     "semantic-release": "^25.0.5",
-    "typescript": "^6.0.3",
+    "typescript": "^7.0.0",
     "vitest": "^4.1.9",
     "wrangler": "^4.95.0"
   },
