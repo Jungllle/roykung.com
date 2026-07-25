@@ -46,7 +46,7 @@
     "semantic-release": "^25.0.5",
     "typescript": "^7.0.0",
     "vitest": "^4.1.9",
-    "wrangler": "^4.95.0"
+    "wrangler": "^4.114.0"
   },
   "license": "MIT",
   "engines": {
