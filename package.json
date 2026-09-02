@@ -27,8 +27,6 @@
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^7.0.0",
-    "@semantic-release/git": "^11.0.0",
     "@tailwindcss/typography": "^0.5.19",
     "@vitest/coverage-v8": "^4.1.9",
     "husky": "^9.1.7",
@@ -37,7 +35,6 @@
     "oxlint": "^1.81.0",
     "prettier": "^3.8.3",
     "prettier-plugin-astro": "^0.14.1",
-    "semantic-release": "^25.0.5",
     "typescript": "^7.0.0",
     "vitest": "^4.1.9",
     "wrangler": "^4.95.0"

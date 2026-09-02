@@ -45,7 +45,7 @@ Welcome! If you are an AI coding assistant (like Antigravity, Cursor, Cline, Win
 
 ### 6. Git & Commits
 
-- We use **Semantic Release** and **Renovate**.
+- Every merge to `main` is deployed; there is no separate release step. **Renovate** keeps dependencies current.
 - All commit messages MUST follow the Conventional Commits specification.
   - Correct: `feat: add dark mode toggle`
   - Correct: `fix: resolve hydration mismatch in header`
