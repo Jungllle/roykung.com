@@ -8,4 +8,7 @@ export default defineConfig({
   },
   integrations: [sitemap()],
   site: 'https://roykung.com',
+  // Match Cloudflare Static Assets, which serves /blog/index.html at /blog/
+  // and redirects /blog there. Keeping dev and canonical URLs identical.
+  trailingSlash: 'always',
 });

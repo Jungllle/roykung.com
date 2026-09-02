@@ -1,15 +1,15 @@
 ---
 const NAV_ITEMS = [
   {
-    path: '/blog',
+    path: '/blog/',
     label: '文章',
   },
   {
-    path: '/talk',
+    path: '/talk/',
     label: '演講分享',
   },
   {
-    path: '/songs',
+    path: '/songs/',
     label: '喜歡的歌曲',
   },
 ];
@@ -17,20 +17,24 @@ const NAV_ITEMS = [
 
 <header class="bg-gray-900">
   <nav class="mx-auto max-w-5xl px-6" aria-label="Top">
-    <div class="flex w-full flex-col gap-y-3 border-b border-gray-500 py-5 sm:flex-row sm:items-center sm:justify-between sm:py-6">
+    <div
+      class="flex w-full flex-col gap-y-3 border-b border-gray-500 py-5 sm:flex-row sm:items-center sm:justify-between sm:py-6"
+    >
       <a href="/" class="text-lg font-semibold text-white sm:text-xl">
         Roy Lin 林昆彥
       </a>
       <div class="flex flex-wrap gap-x-5 gap-y-1">
-        {NAV_ITEMS.map(({ path, label }) => (
-          <a
-            href={path}
-            class="text-sm font-medium text-white hover:text-gray-300 sm:text-base"
-          >
-            {label}
-          </a>
-        ))}
+        {
+          NAV_ITEMS.map(({ path, label }) => (
+            <a
+              href={path}
+              class="text-sm font-medium text-white hover:text-gray-300 sm:text-base"
+            >
+              {label}
+            </a>
+          ))
+        }
       </div>
     </div>
   </nav>
-</header> 
+</header>
