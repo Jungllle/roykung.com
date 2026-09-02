@@ -1,12 +1,8 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 
-const youtubeVideos = [
-  {
-    title: 'OLIVIA ONG [ 如燕 ] Official Music Video (夏夜晚風Live音樂會)',
-    id: 'rnX00KoNf2I',
-  },
-];
+const songs = await getCollection('songs');
 ---
 
 <Layout
@@ -14,38 +10,27 @@ const youtubeVideos = [
   description="林昆彥 (Roy Lin) 喜歡的歌曲與音樂分享。"
 >
   <div>
-    <h1 class="mb-8 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">喜歡的歌曲</h1>
+    <h1
+      class="mb-8 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+    >
+      喜歡的歌曲
+    </h1>
     <div class="space-y-8">
-      {youtubeVideos.map((video) => (
-        <div>
-          <div class="aspect-w-16 aspect-h-9">
+      {
+        songs.map(({ data: song }) => (
+          <div>
             <iframe
-              class="w-full h-full rounded-lg shadow-lg"
-              src={`https://www.youtube.com/embed/${video.id}`}
-              title={video.title}
+              class="aspect-video w-full rounded-lg shadow-lg"
+              src={`https://www.youtube-nocookie.com/embed/${song.youtubeId}`}
+              title={song.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
               loading="lazy"
             />
+            <h2 class="mt-4 text-lg font-medium text-gray-900">{song.title}</h2>
           </div>
-          <h2 class="mt-4 text-lg font-medium text-gray-900">{video.title}</h2>
-        </div>
-      ))}
+        ))
+      }
     </div>
   </div>
 </Layout>
-
-<style>
-  .aspect-w-16 {
-    position: relative;
-    padding-bottom: 56.25%;
-  }
-  
-  .aspect-w-16 iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style> 

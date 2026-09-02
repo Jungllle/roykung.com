@@ -1,4 +1,4 @@
-import { glob } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
 import { defineCollection, z } from 'astro:content';
 
 const blog = defineCollection({
@@ -14,4 +14,22 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const talks = defineCollection({
+  loader: file('./src/content/talks.yaml'),
+  schema: z.object({
+    title: z.string(),
+    url: z.string().url(),
+    date: z.coerce.date(),
+    description: z.string().optional(),
+  }),
+});
+
+const songs = defineCollection({
+  loader: file('./src/content/songs.yaml'),
+  schema: z.object({
+    title: z.string(),
+    youtubeId: z.string().regex(/^[\w-]{11}$/, 'Expected a YouTube video id'),
+  }),
+});
+
+export const collections = { blog, talks, songs };
