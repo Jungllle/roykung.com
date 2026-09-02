@@ -125,3 +125,34 @@ test('profile image is served as an optimised asset, not the raw JPEG', () => {
     'raw profile.jpeg still in dist/',
   );
 });
+
+test('_headers carries the security policy for every path', () => {
+  const headers = read('_headers');
+  const block = headers.split(/\n(?=\S)/).find((b) => b.startsWith('/*\n'));
+  assert.ok(block, 'no /* block in _headers');
+  for (const name of [
+    'Content-Security-Policy',
+    'Strict-Transport-Security',
+    'X-Content-Type-Options',
+    'Referrer-Policy',
+    'Permissions-Policy',
+  ]) {
+    assert.match(block, new RegExp(`^  ${name}: `, 'm'), `missing ${name}`);
+  }
+});
+
+test('pages contain no inline scripts or styles, so the strict CSP holds', () => {
+  const offenders = [];
+  for (const file of htmlFiles()) {
+    const html = readFileSync(file, 'utf8');
+    const rel = file.slice(DIST.length);
+    // <script> without src is inline; JSON-LD data blocks never execute.
+    for (const m of html.matchAll(/<script\b([^>]*)>/g)) {
+      if (!/\bsrc=/.test(m[1]) && !/application\/ld\+json/.test(m[1]))
+        offenders.push(`${rel}: inline <script${m[1]}>`);
+    }
+    if (/<style\b/.test(html)) offenders.push(`${rel}: <style> element`);
+    if (/\sstyle="/.test(html)) offenders.push(`${rel}: style attribute`);
+  }
+  assert.deepEqual(offenders, []);
+});
