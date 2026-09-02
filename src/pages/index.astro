@@ -1,18 +1,26 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import profile from '../assets/profile.jpeg';
 ---
 
 <Layout title="Roy Lin 林昆彥">
   <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
     <div class="order-2 md:order-1">
-      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About</h1>
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+        About
+      </h1>
       <div class="mt-6 space-y-6 text-base text-gray-700">
         <p>
           Roy Lin 林昆彥 is the CEO and co-founder of{' '}
-          <a href="https://jungllle.com" class="text-blue-600 hover:text-blue-800">Jungllle Inc</a> with Gary and Labrada.
-          His entrepreneurial spirit and vision lead the company to journey of
-          success. <a href="https://stickerhd.com" class="text-blue-600 hover:text-blue-800">StickerHD</a> is the best
-          online custom die cut sticker service in Taiwan.
+          <a
+            href="https://jungllle.com"
+            class="text-blue-600 hover:text-blue-800">Jungllle Inc</a
+          > with Gary and Labrada. His entrepreneurial spirit and vision lead the
+          company to journey of success. <a
+            href="https://stickerhd.com"
+            class="text-blue-600 hover:text-blue-800">StickerHD</a
+          > is the best online custom die cut sticker service in Taiwan.
         </p>
         <p>
           Before Roy founded Jungllle, he was the also a co-founder of Credarp
@@ -22,24 +30,38 @@ import Layout from '../layouts/Layout.astro';
         </p>
         <p>
           I'm also the founder of Dreamers' Day, which is the biggest student
-          startup community in Taiwan. Brian and I started it because we believed
-          that students should have entrepreneurship. There were 5 demo shows and
-          20 meetups both in Taipei and Tainan, and over 300 students participated
-          in.
+          startup community in Taiwan. Brian and I started it because we
+          believed that students should have entrepreneurship. There were 5 demo
+          shows and 20 meetups both in Taipei and Tainan, and over 300 students
+          participated in.
         </p>
         <p>
           I share some interesting videos and ideas on{' '}
-          <a href="https://roykung.tumblr.com/" class="text-blue-600 hover:text-blue-800">Tumblr</a>.
+          <a
+            href="https://roykung.tumblr.com/"
+            class="text-blue-600 hover:text-blue-800">Tumblr</a
+          >.
         </p>
         <p>
           I share my slides on{' '}
-          <a href="https://www.slideshare.net/roykung" class="text-blue-600 hover:text-blue-800">Slideshare</a> and{' '}
-          <a href="https://speakerdeck.com/roykung" class="text-blue-600 hover:text-blue-800">SpeakDeck</a>.
+          <a
+            href="https://www.slideshare.net/roykung"
+            class="text-blue-600 hover:text-blue-800">Slideshare</a
+          > and{' '}
+          <a
+            href="https://speakerdeck.com/roykung"
+            class="text-blue-600 hover:text-blue-800">SpeakDeck</a
+          >.
         </p>
         <p>
-          You can find me on <a href="https://twitter.com/roylinkung" class="text-blue-600 hover:text-blue-800">Twitter</a>,
-          <a href="https://www.facebook.com/Roylinkung" class="text-blue-600 hover:text-blue-800">Facebook</a>,
-          or drop me an Email.
+          You can find me on <a
+            href="https://twitter.com/roylinkung"
+            class="text-blue-600 hover:text-blue-800">Twitter</a
+          >,
+          <a
+            href="https://www.facebook.com/Roylinkung"
+            class="text-blue-600 hover:text-blue-800">Facebook</a
+          >, or drop me an Email.
         </p>
       </div>
     </div>
@@ -47,12 +69,16 @@ import Layout from '../layouts/Layout.astro';
       <div
         class="mx-auto aspect-square w-full max-w-xs overflow-hidden rounded-full shadow-lg ring-1 ring-gray-200"
       >
-        <img
-          src="/profile.jpeg"
+        <Image
+          src={profile}
           alt="Roy Lin 林昆彥"
+          width={640}
+          height={640}
+          fit="cover"
+          loading="eager"
           class="block h-full w-full object-cover"
         />
       </div>
     </div>
   </div>
-</Layout> 
+</Layout>

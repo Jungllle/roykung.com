@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { Image } from 'astro:assets';
 import Layout from './Layout.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 
@@ -41,7 +42,7 @@ const shareLinks = [
   description={description}
   type="article"
   publishedDate={pubDate}
-  image={heroImage ?? '/profile.jpeg'}
+  image={heroImage}
 >
   <article class="mx-auto max-w-3xl">
     <header class="mb-10">
@@ -86,9 +87,11 @@ const shareLinks = [
 
     {
       heroImage && (
-        <img
+        <Image
           src={heroImage}
           alt={`Cover image for ${title}`}
+          widths={[640, 960, 1280]}
+          sizes="(min-width: 48rem) 48rem, 100vw"
           class="mb-10 h-auto w-full rounded-xl object-cover shadow-md"
         />
       )
