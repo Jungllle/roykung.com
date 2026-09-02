@@ -1,0 +1,3 @@
+# Serve the site only on the apex; the about. alias redirects permanently so
+# search engines see one canonical host.
+https://about.roykung.com/* https://roykung.com/:splat 301
