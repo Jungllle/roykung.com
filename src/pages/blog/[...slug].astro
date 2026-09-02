@@ -1,10 +1,10 @@
 ---
-import { type CollectionEntry, getCollection } from "astro:content";
-import { render } from "astro:content";
-import BlogPost from "../../layouts/BlogPost.astro";
+import { type CollectionEntry, getCollection } from 'astro:content';
+import { render } from 'astro:content';
+import BlogPost from '../../layouts/BlogPost.astro';
 
 export async function getStaticPaths() {
-  const posts = (await getCollection("blog")).sort(
+  const posts = (await getCollection('blog')).sort(
     (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
   );
   return posts.map((post, index) => ({
@@ -17,16 +17,15 @@ export async function getStaticPaths() {
   }));
 }
 type Props = {
-  post: CollectionEntry<"blog">;
-  prevPost: CollectionEntry<"blog"> | null;
-  nextPost: CollectionEntry<"blog"> | null;
+  post: CollectionEntry<'blog'>;
+  prevPost: CollectionEntry<'blog'> | null;
+  nextPost: CollectionEntry<'blog'> | null;
 };
 
 const { post, prevPost, nextPost } = Astro.props;
 const { Content } = await render(post);
-export const prerender = true;
 
-const toNav = (p: CollectionEntry<"blog"> | null) =>
+const toNav = (p: CollectionEntry<'blog'> | null) =>
   p ? { href: `/blog/${p.id}/`, title: p.data.title } : null;
 ---
 

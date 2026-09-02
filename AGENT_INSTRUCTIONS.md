@@ -4,10 +4,10 @@ Welcome! If you are an AI coding assistant (like Antigravity, Cursor, Cline, Win
 
 ## Project Context
 
-- **Framework**: [Astro](https://astro.build/) (Server-Side Rendered)
+- **Framework**: [Astro](https://astro.build/) (fully static output, every page is prerendered at build time)
 - **UI Components**: `.astro` components only. No UI framework (React, Vue, etc.) is installed; the site is fully static.
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Deployment**: [Cloudflare](https://developers.cloudflare.com/pages/) Edge environment (`@astrojs/cloudflare` adapter)
+- **Deployment**: [Cloudflare Workers Static Assets](https://developers.cloudflare.com/workers/static-assets/) — `wrangler deploy` uploads `dist/`; there is no server-side Worker code.
 - **Package Manager**: `npm`
 
 ## Code Conventions & Rules
@@ -22,10 +22,11 @@ Welcome! If you are an AI coding assistant (like Antigravity, Cursor, Cline, Win
 - Use Tailwind CSS utility classes exclusively.
 - Avoid writing custom CSS in `<style>` blocks unless absolutely necessary for complex animations or pseudo-elements not covered by Tailwind.
 
-### 3. Edge Compatibility (Cloudflare)
+### 3. Static Output (Cloudflare)
 
-- This site runs on Cloudflare Workers/Pages edge network.
-- **DO NOT** use Node.js specific modules (like `fs`, `path`, `worker_threads`, or `child_process`) in your application code, as they will crash the Edge runtime.
+- The site is built to static HTML and served from Cloudflare Workers Static Assets. There is no request-time server code.
+- **DO NOT** add SSR-only features (`Astro.request` body parsing, cookies, API routes with `POST`, `export const prerender = false`). If a feature truly needs a runtime, discuss re-adding an adapter first.
+- Custom headers and redirects go in `public/_headers` and `public/_redirects`.
 
 ### 4. Testing & Coverage
 
