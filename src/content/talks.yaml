@@ -1,0 +1,66 @@
+# Talks, videos and press coverage. Rendered by src/pages/talk.astro.
+# Each entry needs a unique `id`. Dates are ISO (YYYY-MM-DD).
+
+- id: 2016-uba-ntu-final-eight
+  title: 【104 UBA】化悲憤為力量，臺大闖進全國八強
+  url: https://basketball.biji.co/index.php?q=news&act=info&id=7431
+  date: 2016-03-31
+
+- id: 2014-pitch-night-elbum-in
+  title: 創業人氣王 Pitch Night — elbum in：球隊數據記錄服務
+  url: https://www.youtube.com/watch?v=DPrZkcElRuI
+  date: 2014-03-14
+
+- id: 2014-elbum-in-intro
+  title: elbum in 球隊數據記錄服務，造就你傑出表現！
+  url: https://www.youtube.com/watch?v=29y2392UCLc
+  date: 2014-02-12
+  description: >-
+    elbum 是一款團隊運動數據記錄的網路服務，結合 Web 與 App
+    幫助使用者記錄運動成績以獲得更精確的數據分析，進而提升運動表現。我們想讓自己有更好的表現而興起做
+    elbum 的念頭。elbum 不只是個網路服務，更是一種態度：Improve with Technology.
+
+- id: 2013-airbnb-for-carpo
+  title: Airbnb for Carpo
+  url: https://www.slideshare.net/roykung/aibnb-for-carpo
+  date: 2013-05-06
+
+- id: 2012-dreamers-day-first-year-review
+  title: Dreamers' Day 開場與一週年回顧
+  url: https://www.slideshare.net/roykung/dreamers-day-the-first-year-review
+  date: 2012-12-14
+
+- id: 2012-social-traction-for-app
+  title: App 在設計與社群上的 4 個重要議題
+  url: https://www.slideshare.net/roykung/social-traction-for-app
+  date: 2012-10-11
+
+- id: 2012-dreamers-day-ncku
+  title: Dreamers' Day 台南場 — 台灣大學生適合創業嗎？
+  url: https://www.slideshare.net/roykung/dreamers-day-3-ncku
+  date: 2012-09-22
+
+- id: 2012-ios-6-change
+  title: iOS 6 剛發佈時介紹與 iOS 5 有何不同
+  url: https://www.slideshare.net/roykung/ios-6-change
+  date: 2012-08-31
+
+- id: 2012-case-study-airbnb
+  title: Gabble, Inc x IEH Case Study on Airbnb
+  url: https://www.slideshare.net/roykung/casestudyonairbnb
+  date: 2012-08-24
+
+- id: 2012-case-study-foursquare
+  title: Gabble, Inc Case Study on Foursquare
+  url: https://www.slideshare.net/roykung/something-about-foursquare
+  date: 2012-08-15
+
+- id: 2012-sonarview
+  title: 資訊科技與創新期末專題 - Sonarview
+  url: https://www.slideshare.net/roykung/sonarview
+  date: 2012-06-19
+
+- id: 2012-entrepreneurship-in-college
+  title: 大學生涯要有的創業精神 — 生傳系分享會
+  url: https://speakerdeck.com/roykung/da-xue-sheng-ya-yao-you-de-chuang-ye-jing-shen
+  date: 2012-06-05

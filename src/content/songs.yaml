@@ -1,0 +1,6 @@
+# Favourite songs, embedded as YouTube players by src/pages/songs.astro.
+# Each entry needs a unique `id` and the YouTube video id.
+
+- id: olivia-ong-ru-yan
+  title: OLIVIA ONG [ 如燕 ] Official Music Video (夏夜晚風Live音樂會)
+  youtubeId: rnX00KoNf2I

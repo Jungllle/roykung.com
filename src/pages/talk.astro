@@ -1,95 +1,13 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import FormattedDate from "../components/FormattedDate.astro";
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import { talkSource, yearRange } from '../lib/talks';
 
-type Talk = {
-  title: string;
-  url: string;
-  date: string;
-  description?: string;
-};
-
-const talks: Talk[] = [
-  {
-    title: "【104 UBA】化悲憤為力量，臺大闖進全國八強",
-    url: "https://basketball.biji.co/index.php?q=news&act=info&id=7431",
-    date: "2016-03-31",
-  },
-  {
-    title: "創業人氣王 Pitch Night — elbum in：球隊數據記錄服務",
-    url: "https://www.youtube.com/watch?v=DPrZkcElRuI",
-    date: "2014-03-14",
-  },
-  {
-    title: "elbum in 球隊數據記錄服務，造就你傑出表現！",
-    url: "https://www.youtube.com/watch?v=29y2392UCLc",
-    date: "2014-02-12",
-    description:
-      "elbum 是一款團隊運動數據記錄的網路服務，結合 Web 與 App 幫助使用者記錄運動成績以獲得更精確的數據分析，進而提升運動表現。我們想讓自己有更好的表現而興起做 elbum 的念頭。elbum 不只是個網路服務，更是一種態度：Improve with Technology.",
-  },
-  {
-    title: "資訊科技與創新期末專題 - Sonarview",
-    url: "https://www.slideshare.net/roykung/sonarview",
-    date: "2012-06-19",
-  },
-  {
-    title: "大學生涯要有的創業精神 — 生傳系分享會",
-    url: "https://speakerdeck.com/roykung/da-xue-sheng-ya-yao-you-de-chuang-ye-jing-shen",
-    date: "2012-06-05",
-  },
-  {
-    title: "Gabble, Inc Case Study on Foursquare",
-    url: "https://www.slideshare.net/roykung/something-about-foursquare",
-    date: "2012-08-15",
-  },
-  {
-    title: "Gabble, Inc x IEH Case Study on Airbnb",
-    url: "https://www.slideshare.net/roykung/casestudyonairbnb",
-    date: "2012-08-24",
-  },
-  {
-    title: "iOS 6 剛發佈時介紹與 iOS 5 有何不同",
-    url: "https://www.slideshare.net/roykung/ios-6-change",
-    date: "2012-08-31",
-  },
-  {
-    title: "Dreamers' Day 台南場 — 台灣大學生適合創業嗎？",
-    url: "https://www.slideshare.net/roykung/dreamers-day-3-ncku",
-    date: "2012-09-22",
-  },
-  {
-    title: "App 在設計與社群上的 4 個重要議題",
-    url: "https://www.slideshare.net/roykung/social-traction-for-app",
-    date: "2012-10-11",
-  },
-  {
-    title: "Dreamers' Day 開場與一週年回顧",
-    url: "https://www.slideshare.net/roykung/dreamers-day-the-first-year-review",
-    date: "2012-12-14",
-  },
-  {
-    title: "Airbnb for Carpo",
-    url: "https://www.slideshare.net/roykung/aibnb-for-carpo",
-    date: "2013-05-06",
-  },
-];
-
-const sorted = talks
-  .map((t) => ({ ...t, pubDate: new Date(t.date) }))
-  .sort((a, b) => b.pubDate.valueOf() - a.pubDate.valueOf());
-
-const source = (url: string) =>
-  url.includes("youtube.com") || url.includes("youtu.be")
-    ? "YouTube"
-    : url.includes("biji.co")
-      ? "運動筆記"
-      : url.includes("speakerdeck.com")
-        ? "SpeakerDeck"
-        : "SlideShare";
-
-const years = sorted.map((t) => t.pubDate.getFullYear());
-const firstYear = Math.min(...years);
-const lastYear = Math.max(...years);
+const talks = (await getCollection('talks')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+const range = yearRange(talks.map((t) => t.data.date));
 ---
 
 <Layout
@@ -102,17 +20,13 @@ const lastYear = Math.max(...years);
         演講與分享
       </h1>
       <p class="mt-4 text-base text-gray-500">
-        {sorted.length} 則演講、影片與報導{
-          firstYear === lastYear
-            ? `（${firstYear}）`
-            : `（${firstYear} – ${lastYear}）`
-        }
+        {talks.length} 則演講、影片與報導{range && `（${range}）`}
       </p>
     </header>
 
     <ul class="space-y-8">
       {
-        sorted.map((talk) => (
+        talks.map(({ data: talk }) => (
           <li class="group relative">
             <a
               href={talk.url}
@@ -121,11 +35,9 @@ const lastYear = Math.max(...years);
               class="block -mx-4 rounded-xl px-4 py-3 transition-colors hover:bg-gray-50"
             >
               <div class="flex items-center gap-x-3 text-xs font-medium uppercase tracking-wide text-gray-400">
-                <time datetime={talk.pubDate.toISOString()}>
-                  <FormattedDate date={talk.pubDate} />
-                </time>
+                <FormattedDate date={talk.date} />
                 <span aria-hidden="true">·</span>
-                <span>{source(talk.url)}</span>
+                <span>{talkSource(talk.url)}</span>
               </div>
               <h2 class="mt-1.5 inline-flex items-center gap-x-1.5 text-lg font-semibold leading-snug text-gray-900 group-hover:text-blue-700">
                 {talk.title}
