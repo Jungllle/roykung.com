@@ -8,8 +8,6 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "build:worker": "astro build",
-    "deploy:worker": "wrangler deploy",
     "lint": "oxlint",
     "format": "oxfmt",
     "format:check": "oxfmt --check",
@@ -18,7 +16,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:smoke": "node --test scripts/smoke-test.mjs",
-    "prepare": "husky"
+    "prepare": "husky",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.19",
@@ -33,7 +32,6 @@
     "@tailwindcss/typography": "^0.5.19",
     "@vitest/coverage-v8": "^4.1.9",
     "husky": "^9.1.7",
-    "jsdom": "^30.0.0",
     "lint-staged": "^17.0.7",
     "oxfmt": "^0.66.0",
     "oxlint": "^1.81.0",
