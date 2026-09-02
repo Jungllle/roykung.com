@@ -1,3 +1,13 @@
+# [1.2.0](https://github.com/Jungllle/roykung.com/compare/v1.1.0...v1.2.0) (2026-09-02)
+
+### Bug Fixes
+
+- use trailing slashes consistently for internal URLs ([abe99ad](https://github.com/Jungllle/roykung.com/commit/abe99ad80fe63233972e1c0f15feef79afcb3289))
+
+### Features
+
+- add RSS feed ([0565e9c](https://github.com/Jungllle/roykung.com/commit/0565e9c5dbe8e4cb855007c32838a3c1c8c79471))
+
 # [1.1.0](https://github.com/Jungllle/roykung.com/compare/v1.0.2...v1.1.0) (2026-09-02)
 
 ### Features
