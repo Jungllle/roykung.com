@@ -1,5 +1,6 @@
 ---
 import type { ImageMetadata } from 'astro';
+import { ClientRouter } from 'astro:transitions';
 import NavigationBar from '../components/NavigationBar.astro';
 import Copyright from '../components/Copyright.astro';
 import profile from '../assets/profile.jpeg';
@@ -64,6 +65,7 @@ const jsonLd = isArticle
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <ClientRouter />
     <title>{docTitle}</title>
     <meta name="description" content={description} />
     <meta name="author" content={AUTHOR} />
