@@ -38,9 +38,10 @@ Welcome! If you are an AI coding assistant (like Antigravity, Cursor, Cline, Win
 
 ### 5. Linting & Formatting
 
-- We use **Oxlint** for ultra-fast linting and **Prettier** for formatting.
+- We use **Oxlint** for ultra-fast linting and **Oxfmt** for formatting (JS/TS, JSON, Markdown, YAML, CSS).
+- `.astro` files are still formatted by **Prettier** with `prettier-plugin-astro`, because Oxfmt does not support Astro yet.
 - Ensure your code has no lint warnings before committing.
-- Run `npm run lint` to verify. (Pre-commit hooks will automatically format your code with Prettier).
+- Run `npm run lint` and `npm run format:check` to verify. (Pre-commit hooks will automatically format staged files).
 
 ### 6. Git & Commits
 
