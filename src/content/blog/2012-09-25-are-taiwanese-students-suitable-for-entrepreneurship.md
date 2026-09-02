@@ -1,7 +1,7 @@
 ---
 title: "台灣大學生適合創業嗎？ @NCKU"
 description: "台灣大學生適合創業嗎？ @NCKU"
-pubDate: "Sep 25 2012"
+pubDate: 2012-09-25
 ---
 
 Dreamers' Day 開到台南去了，由我就讀成大的好朋友 Gary Lai 主辦。很榮幸的，我被邀請到現場分享這一年創業路上的一些心得、想法。以下是當天內容節錄。

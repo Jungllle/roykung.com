@@ -1,7 +1,7 @@
 ---
 title: "松高18th傳奇 撈哥傳"
 description: "松高18th傳奇 撈哥傳"
-pubDate: "May 3 2008"
+pubDate: 2008-05-03
 ---
 
 撈哥 = 呂光祐 = 小光頭

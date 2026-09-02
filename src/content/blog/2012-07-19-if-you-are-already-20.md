@@ -1,7 +1,7 @@
 ---
 title: "如果你已經20歲了"
 description: "轉錄自批踢踢 wisdom 板 — 李開復〈如果你已經20歲了〉。"
-pubDate: "Jul 19 2012"
+pubDate: 2012-07-19
 ---
 
 本文轉錄字批踢踢 wisdom板

@@ -1,7 +1,7 @@
 ---
 title: "部落格常青術"
 description: "部落格常青術"
-pubDate: "Apr 15 2013"
+pubDate: 2013-04-15
 ---
 
 Tumblr 用到現在已經滿一年了(註2)，到目前為止共累計 24篇文章，平均一個月會有兩篇文章。不少人的 tumblr 是用來發圖片、有趣的 Gif 或是 Reblog 文章、圖片。當然也有人拿來當 Blog 用，甚至是官方網站(Evernote、Path)。 而我使用的原因是它方便、簡單、又有完整的社交環境 ( Follow, Reblog, Like)，還可以修改 html 及 css，也不用煩惱 hosting 的問題。

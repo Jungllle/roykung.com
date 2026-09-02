@@ -1,7 +1,7 @@
 ---
 title: "[心得筆記]消費性 app 的成長與募資經驗分享，以 Cubie 為例"
 description: "[心得筆記]消費性 app 的成長與募資經驗分享，以 Cubie 為例"
-pubDate: "Aug 05 2013"
+pubDate: 2013-08-05
 ---
 
 上星期六(8/3)參加了 Inside 舉辦的 2013 Inside Salon，由 Cubie Messenger 的CEO Tempo 分享如何募集 Seed fund 、500startups 以及 Growth 三個主題。我盼望這次的演講很久了，因為能聽到"乾貨"分享經驗的機會非常珍貴，所以一看到報名頁面我就馬上買票了。底下的內容是當天的紀錄以及我個人的心得。

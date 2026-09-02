@@ -1,24 +1,14 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-import FormattedDate from "../../components/FormattedDate.astro";
-import { getCollection } from "astro:content";
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import { byNewest, groupByYear, isPublished } from '../../lib/posts';
 
-const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const posts = (await getCollection('blog', isPublished)).sort(byNewest);
+const groups = groupByYear(posts);
 
-const groups = posts.reduce<Record<number, typeof posts>>((acc, post) => {
-  const year = post.data.pubDate.getFullYear();
-  (acc[year] ??= []).push(post);
-  return acc;
-}, {});
-
-const years = Object.keys(groups)
-  .map(Number)
-  .sort((a, b) => b - a);
-
-const firstYear = posts.at(-1)?.data.pubDate.getFullYear();
-const lastYear = posts.at(0)?.data.pubDate.getFullYear();
+const firstYear = groups.at(-1)?.year;
+const lastYear = groups.at(0)?.year;
 ---
 
 <Layout
@@ -27,9 +17,7 @@ const lastYear = posts.at(0)?.data.pubDate.getFullYear();
 >
   <div>
     <header class="mb-12 border-b border-gray-200 pb-8">
-      <h1
-        class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
-      >
+      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
         文章
       </h1>
       <p class="mt-4 text-base text-gray-500">
@@ -41,24 +29,21 @@ const lastYear = posts.at(0)?.data.pubDate.getFullYear();
 
     <div class="space-y-16">
       {
-        years.map((year) => (
+        groups.map(({ year, posts }) => (
           <section class="grid gap-x-8 gap-y-6 sm:grid-cols-[5rem_1fr]">
             <h2 class="text-2xl font-semibold tabular-nums text-gray-300 sm:sticky sm:top-8 sm:self-start">
               {year}
             </h2>
             <ul class="space-y-8">
-              {groups[year].map((post) => (
+              {posts.map((post) => (
                 <li class="group relative">
                   <a
                     href={`/blog/${post.id}/`}
                     class="block -mx-4 rounded-xl px-4 py-3 transition-colors hover:bg-gray-50"
                   >
-                    <time
-                      datetime={post.data.pubDate.toISOString()}
-                      class="text-xs font-medium uppercase tracking-wide text-gray-400"
-                    >
+                    <div class="text-xs font-medium uppercase tracking-wide text-gray-400">
                       <FormattedDate date={post.data.pubDate} />
-                    </time>
+                    </div>
                     <h3 class="mt-1.5 text-lg font-semibold leading-snug text-gray-900 group-hover:text-blue-700">
                       {post.data.title}
                     </h3>

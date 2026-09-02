@@ -1,7 +1,7 @@
 ---
 title: "不可以手無寸鐵！"
 description: "不可以手無寸鐵！"
-pubDate: "Mar 30 2012"
+pubDate: 2012-03-30
 ---
 
 這學期修了一門星期二晚上雲端商業學程開的 Information Technology and Innovation ，授課老師在Berkeley 當訪問學者的時候因為感受到到矽谷科技創新的力量以及潛力，所以在回到台灣就籌備開設這門課。課程內容的目標是引導我們 Cultivate 創新的能力，以及認識到 Patents 的重要。前者就不多說，就是需要多觀察、多學習、多思考。今天要提的是專利為何重要？
