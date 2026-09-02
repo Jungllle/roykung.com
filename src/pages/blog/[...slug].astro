@@ -1,12 +1,13 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import { render } from 'astro:content';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../../layouts/BlogPost.astro';
+import { byNewest, isPublished } from '../../lib/posts';
 
 export async function getStaticPaths() {
-  const posts = (await getCollection('blog')).sort(
-    (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf(),
-  );
+  // Oldest first so prev/next follow reading order.
+  const posts = (await getCollection('blog', isPublished))
+    .sort(byNewest)
+    .reverse();
   return posts.map((post, index) => ({
     params: { slug: post.id },
     props: {

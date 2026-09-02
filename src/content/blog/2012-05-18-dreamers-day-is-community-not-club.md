@@ -1,7 +1,7 @@
 ---
 title: "Dreamers' Day 是社群不是社團"
 description: "Dreamers' Day 是社群不是社團"
-pubDate: "May 18 2012"
+pubDate: 2012-05-18
 ---
 
 Dreamers' Day #2 在5/11 順利的落幕，活動來了近70位同學、校友參與，還有一些是遠從新竹或台中趕來一同參加。三位前輩分享了他們創業的經驗與心得、四個團隊分享了 idea、還有五個學生團隊Demo了產品，#2更詳細資訊請上網站或者參考由PABU團隊在網站上的心得文。

@@ -1,7 +1,7 @@
 ---
 title: "如何設計一個成功的 Pre-Launch Page ?"
 description: "如何設計一個成功的 Pre-Launch Page ?"
-pubDate: "Oct 07 2013"
+pubDate: 2013-10-07
 ---
 
 前陣子 elbum 的 pre-launch 頁面告一段落後，因為沒達到設定的目標，所以做了檢討：如何設計一個好的 pre-launch page ?

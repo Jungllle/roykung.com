@@ -1,7 +1,7 @@
 ---
 title: "Viral Marketing 雜感"
 description: "Viral Marketing 雜感"
-pubDate: "Oct 29 2012"
+pubDate: 2012-10-29
 ---
 
 Viral Marketing 中文翻作「病毒式行銷」。對於 Startup 而言，Viral Marketing 是能夠爆炸性成長的關鍵因素。就連Facebook 粉絲頁的教學，也常常看到病毒式行銷的字眼。前幾天剛好和朋友討論到 Viral Marketing 的內容，利用一個下午整理一些想法和大家分享。

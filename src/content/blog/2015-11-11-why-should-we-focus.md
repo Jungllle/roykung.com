@@ -1,7 +1,7 @@
 ---
 title: "為什麼要專注"
 description: "為什麼要專注"
-pubDate: "Nov 11 2015"
+pubDate: 2015-11-11
 ---
 
 為什麼要專注

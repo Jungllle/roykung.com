@@ -1,7 +1,7 @@
 ---
 title: "Dreamers' Day - 台大網路創業社群"
 description: "Dreamers' Day - 台大網路創業社群"
-pubDate: "Dec 4 2012"
+pubDate: 2012-12-04
 ---
 
 Dremaers' Day 集結了一群對網路創業有熱情的同學

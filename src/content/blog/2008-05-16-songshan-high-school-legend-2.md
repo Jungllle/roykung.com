@@ -1,7 +1,7 @@
 ---
 title: "松高18th傳奇 凱哥傳"
 description: "松高18th傳奇 凱哥傳"
-pubDate: "May 16 2008"
+pubDate: 2008-05-16
 ---
 
 我想先跟大家說明"凱"這個字的意涵

@@ -1,7 +1,7 @@
 ---
 title: "牛頓第三運動定律"
 description: "牛頓第三運動定律"
-pubDate: "Dec 25 2014"
+pubDate: 2014-12-25
 ---
 
 牛頓第三定律，人類解決困境到達新境界的唯一方法，就是學會放下 - Interstellar

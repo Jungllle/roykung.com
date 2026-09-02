@@ -1,17 +1,18 @@
 ---
 interface Props {
-    date: Date;
+  date: Date;
 }
 
 const { date } = Astro.props;
+
+// Content dates are ISO dates parsed as UTC midnight, so format in UTC to
+// avoid showing the previous day on machines west of UTC.
+const label = date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'short',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
 ---
 
-<time datetime={date.toISOString()}>
-    {
-        date.toLocaleDateString('en-us', {
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric',
-        })
-    }
-</time>
+<time datetime={date.toISOString()}>{label}</time>

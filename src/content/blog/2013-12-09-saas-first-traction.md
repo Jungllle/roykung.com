@@ -1,7 +1,7 @@
 ---
 title: "SaaS 公司的第一個Traction"
 description: "SaaS 公司的第一個Traction"
-pubDate: "Dec 09 2013"
+pubDate: 2013-12-09
 ---
 
 最近對 SaaS 這詞很感興趣，也對它有一點點想法。在 Ben 的 Twitter 上看到一篇討論 SaaS First Traction的文章。原本心血來潮想翻譯成中文，但是有些關鍵字並不好翻，而且參雜了作者其他文章的內容，所以就還是用自己的話寫囉。原文請看此( How To Know You've Hit First Traction In SaaS. The Moment When You've Got A Real Company. )

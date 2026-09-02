@@ -1,7 +1,7 @@
 ---
 title: "Improvement goes with statistics"
 description: "Improvement goes with statistics"
-pubDate: "May 14 2013"
+pubDate: 2013-05-14
 ---
 
 離開上家公司後，不少朋友詢問之後的計劃。elbum 就是其中之一，從12月開始有構想，中間也投了一些比賽。一直到最近一兩個月成員開始到位後才有實作： Brian 負責程式，Labrada 負責 UI design，我負責行銷、網站營運與前端CSS。兩位是老戰友了，有相近的溝通頻率做起事來也特別愉快有效率。

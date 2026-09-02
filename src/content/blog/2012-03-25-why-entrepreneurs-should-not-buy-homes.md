@@ -1,7 +1,7 @@
 ---
 title: "為什麼「不要」買房子？為什麼「要」買房子？"
 description: "為什麼「不要」買房子？為什麼「要」買房子？"
-pubDate: "Mar 25 2012"
+pubDate: 2012-03-25
 ---
 
 昨天在 TechCrunch 看到一篇文章，標題馬上吸引我的目光 Why Entrepreneurs Should Not Buy Homes ？不管在西方社會中深植在美國人心中的 American Dreams，或者是東方華人傳統有土斯有財的觀念，擁有一間屬於自己的房子都是生命中非常重要的一件事。作者 James Altucher 是一位工程師、創業家，也是作者與創投。他在這篇文章中以自身的經驗與觀點來告訴創業家或有志創業的人們不要買房子，特別是當你正在 Startup 或正在Startup的中段絕對不能買。為什麼呢？James 將理由分成財務以及個人生涯發展。

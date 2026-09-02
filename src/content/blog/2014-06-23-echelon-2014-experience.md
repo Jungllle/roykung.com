@@ -1,7 +1,7 @@
 ---
 title: "Echelon 2014 參賽心得"
 description: "Echelon 2014 參賽心得"
-pubDate: "Jun 23 2014"
+pubDate: 2014-06-23
 ---
 
 六月中我們團隊前往新加坡參加 Echelon 2014，回來後將一些心得記錄下來。
