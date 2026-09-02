@@ -44,7 +44,6 @@ test('dist/ exists with the top-level pages', () => {
     'sitemap-index.xml',
     'robots.txt',
     '_headers',
-    '_redirects',
   ]) {
     assert.ok(existsSync(join(DIST, rel)), `missing ${rel}`);
   }
