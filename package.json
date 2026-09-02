@@ -17,6 +17,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
+    "test:smoke": "node --test scripts/smoke-test.mjs",
     "prepare": "husky"
   },
   "dependencies": {
