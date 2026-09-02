@@ -73,6 +73,12 @@ const jsonLd = isArticle
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={SITE_NAME}
+      href={new URL('rss.xml', siteUrl).href}
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={type} />
