@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import { getViteConfig } from 'astro/config';
 
 export default getViteConfig({
@@ -15,7 +16,6 @@ export default getViteConfig({
         'src/content/**', // Out of scope: Data collections
         'src/content.config.ts', // Out of scope: Astro configuration
       ],
-      all: true,
     },
   },
 });
