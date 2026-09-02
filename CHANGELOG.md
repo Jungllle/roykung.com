@@ -1,3 +1,9 @@
+# [1.1.0](https://github.com/Jungllle/roykung.com/compare/v1.0.2...v1.1.0) (2026-09-02)
+
+### Features
+
+- add 404 page ([93ea5d8](https://github.com/Jungllle/roykung.com/commit/93ea5d85f04013e93bd1321765c96d2f38f9b5e5))
+
 ## [1.0.2](https://github.com/Jungllle/roykung.com/compare/v1.0.1...v1.0.2) (2026-06-29)
 
 ### Bug Fixes
