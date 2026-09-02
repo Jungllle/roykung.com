@@ -27,6 +27,9 @@ jobs:
       - name: Run oxlint
         run: npm run lint
 
+      - name: Check formatting with oxfmt
+        run: npm run format:check
+
       - name: Run vitest
         run: npm run test:coverage
 
