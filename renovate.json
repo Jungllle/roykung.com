@@ -26,6 +26,11 @@
       "description": "Group GitHub Actions updates together",
       "matchManagers": ["github-actions"],
       "groupName": "github-actions dependencies"
+    },
+    {
+      "description": ".nvmrc tracks the Node preinstalled in the Cloudflare build image; bump it by hand",
+      "matchManagers": ["nvm"],
+      "enabled": false
     }
   ]
 }
