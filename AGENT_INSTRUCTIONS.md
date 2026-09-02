@@ -5,7 +5,7 @@ Welcome! If you are an AI coding assistant (like Antigravity, Cursor, Cline, Win
 ## Project Context
 
 - **Framework**: [Astro](https://astro.build/) (Server-Side Rendered)
-- **UI Components**: Primarily `.astro` components. [React 19](https://react.dev/) is available but should ONLY be used for components requiring client-side interactivity.
+- **UI Components**: `.astro` components only. No UI framework (React, Vue, etc.) is installed; the site is fully static.
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
 - **Deployment**: [Cloudflare](https://developers.cloudflare.com/pages/) Edge environment (`@astrojs/cloudflare` adapter)
 - **Package Manager**: `npm`
@@ -14,9 +14,8 @@ Welcome! If you are an AI coding assistant (like Antigravity, Cursor, Cline, Win
 
 ### 1. Component Strategy
 
-- **Default to Astro**: Write all structural and static layout components as `.astro` files.
-- **React for Interactivity**: If a component needs complex state (`useState`), lifecycle (`useEffect`), or browser-only APIs, use `.tsx`.
-- **Hydration**: When using React components inside Astro files, remember to explicitly define the hydration strategy (e.g., `<MyReactComponent client:load />` or `client:visible`).
+- **Astro only**: Write all components as `.astro` files.
+- **Interactivity**: For small client-side behaviour, use a plain `<script>` block inside the `.astro` component. Do not add a UI framework integration without discussing it first.
 
 ### 2. Styling
 
