@@ -1,12 +1,15 @@
 ---
+import type { ImageMetadata } from 'astro';
 import NavigationBar from '../components/NavigationBar.astro';
 import Copyright from '../components/Copyright.astro';
+import profile from '../assets/profile.jpeg';
 import '../styles/global.css';
 
 interface Props {
   title: string;
   description?: string;
-  image?: string;
+  /** Social-sharing image: an imported asset or an absolute URL path. */
+  image?: ImageMetadata | string;
   type?: 'website' | 'article';
   publishedDate?: Date;
 }
@@ -19,7 +22,7 @@ const DEFAULT_DESCRIPTION =
 const {
   title = SITE_NAME,
   description = DEFAULT_DESCRIPTION,
-  image = '/profile.jpeg',
+  image = profile,
   type = 'website',
   publishedDate,
 } = Astro.props;
@@ -28,7 +31,8 @@ const docTitle = title === SITE_NAME ? title : `${title} | ${SITE_NAME}`;
 
 const siteUrl = Astro.site ?? new URL('https://roykung.com');
 const canonical = new URL(Astro.url.pathname, siteUrl).href;
-const imageUrl = new URL(image, siteUrl).href;
+const imagePath = typeof image === 'string' ? image : image.src;
+const imageUrl = new URL(imagePath, siteUrl).href;
 const isArticle = type === 'article';
 
 const jsonLd = isArticle
