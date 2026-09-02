@@ -5,10 +5,10 @@ import FormattedDate from './FormattedDate.astro';
 describe('FormattedDate', () => {
   it('renders the date correctly in short format', async () => {
     const container = await AstroContainer.create();
-    
+
     // Create a fixed date for testing
     const testDate = new Date('2026-06-17T10:00:00Z');
-    
+
     const result = await container.renderToString(FormattedDate, {
       props: {
         date: testDate,

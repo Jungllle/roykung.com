@@ -1,7 +1,7 @@
 ---
-title: 'North Star'
-description: 'North Star'
-pubDate: 'Nov 11 2015'
+title: "North Star"
+description: "North Star"
+pubDate: "Nov 11 2015"
 ---
 
 這個影片提到產品或 Business 沒有 North Star（明確的成長 KPI），就不需要做 Growth。 https://www.youtube.com/watch?v=n_yHZ_vKjno 否則只是徒然耗費資源。
