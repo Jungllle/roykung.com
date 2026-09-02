@@ -10,9 +10,7 @@
   "platformAutomerge": true,
   "automergeStrategy": "squash",
   "minimumReleaseAge": "3 days",
-  "schedule": [
-    "before 5am on monday"
-  ],
+  "schedule": ["before 5am on monday"],
   "dependencyDashboard": true,
   "vulnerabilityAlerts": {
     "automerge": true,

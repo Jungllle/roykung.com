@@ -8,6 +8,6 @@
   "preview_urls": false,
   "routes": [
     { "pattern": "roykung.com/*", "zone_name": "roykung.com" },
-    { "pattern": "about.roykung.com/*", "zone_name": "roykung.com" }
-  ]
+    { "pattern": "about.roykung.com/*", "zone_name": "roykung.com" },
+  ],
 }

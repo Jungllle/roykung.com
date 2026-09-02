@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import cloudflare from '@astrojs/cloudflare';
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 
@@ -12,15 +12,11 @@ export default defineConfig({
       // Use react-dom/server.edge instead of react-dom/server.browser for React 19.
       // Without this, MessageChannel from node:worker_threads needs to be polyfilled.
       alias: import.meta.env.PROD && {
-        "react-dom/server": "react-dom/server.edge",
+        'react-dom/server': 'react-dom/server.edge',
       },
     },
   },
-  integrations: [
-    mdx(),
-    react(),
-    sitemap()
-  ],
+  integrations: [mdx(), react(), sitemap()],
   output: 'server',
   adapter: process.env.VITEST ? undefined : cloudflare(),
   site: 'https://roykung.com',
