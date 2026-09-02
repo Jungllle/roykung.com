@@ -1,3 +1,9 @@
+# [1.3.0](https://github.com/Jungllle/roykung.com/compare/v1.2.0...v1.3.0) (2026-09-02)
+
+### Features
+
+- redirect about.roykung.com to the apex domain ([6912c60](https://github.com/Jungllle/roykung.com/commit/6912c6015919a22502af8b77616aa62f618a8653))
+
 # [1.2.0](https://github.com/Jungllle/roykung.com/compare/v1.1.0...v1.2.0) (2026-09-02)
 
 ### Bug Fixes
