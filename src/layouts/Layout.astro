@@ -1,7 +1,7 @@
 ---
 import NavigationBar from '../components/NavigationBar.astro';
 import Copyright from '../components/Copyright.astro';
-import "../styles/global.css";
+import '../styles/global.css';
 
 interface Props {
   title: string;
@@ -68,11 +68,7 @@ const jsonLd = isArticle
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link
-      rel="sitemap"
-      type="application/xml"
-      href="/sitemap-index.xml"
-    />
+    <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={type} />
@@ -101,10 +97,7 @@ const jsonLd = isArticle
     <meta name="twitter:site" content="@roylinkung" />
     <meta name="twitter:creator" content="@roylinkung" />
 
-    <script
-      type="application/ld+json"
-      set:html={JSON.stringify(jsonLd)}
-    />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   </head>
   <body class="min-h-screen bg-white">
     <NavigationBar />
@@ -114,17 +107,3 @@ const jsonLd = isArticle
     </main>
   </body>
 </html>
-
-<style is:global>
-  :root {
-    --accent: 136, 58, 234;
-    --accent-light: 224, 204, 250;
-    --accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
-      white 60%
-    );
-  }
-</style>
