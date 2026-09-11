@@ -37,7 +37,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "typescript": "^7.0.0",
     "vitest": "^5.0.0",
-    "wrangler": "^4.95.0"
+    "wrangler": "^4.131.0"
   },
   "license": "MIT",
   "engines": {
